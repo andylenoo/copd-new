@@ -66,7 +66,7 @@
                 id="search-input"
                 type="search"
                 placeholder="Search symptoms..."
-                class="rounded-button text-drcopd-gray-900 placeholder-drcopd-gray-500 border-drcopd-gray-300 focus:border-drcopd-blue focus:ring-drcopd-blue/30 w-full border bg-gray-50 py-2 pr-4 pl-10 transition-colors duration-250"
+                class="focus:ring-blue/30 w-full rounded-md border border-gray-300 bg-gray-50 py-2 pr-4 pl-10 text-gray-900 placeholder-gray-500 transition-colors duration-250 focus:border-blue-700"
                 value=""
               />
               <svg
@@ -123,8 +123,9 @@
                 >Find Treatment</a
               > -->
         <a
-          href="login.html"
-          class="rounded-button bg-drcopd-navy hover:bg-drcopd-blue hidden transform-gpu items-center px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:scale-105 hover:text-white hover:shadow-xl active:scale-95 min-[820px]:inline-flex"
+          [routerLink]="['/login']"
+          routerLinkActive="router-link-active"
+          class="hidden transform-gpu items-center rounded-md bg-blue-700 px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:scale-105 hover:bg-blue-800 hover:text-white hover:shadow-xl active:scale-95 min-[820px]:inline-flex"
           data-svelte-h="svelte-1bfjdjt"
           >Login</a
         >

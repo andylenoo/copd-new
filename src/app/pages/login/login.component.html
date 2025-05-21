@@ -1,0 +1,181 @@
+<div
+  class="flex min-h-screen flex-col justify-center bg-gray-50 py-12 sm:px-6 lg:px-8"
+>
+  <div class="sm:mx-auto sm:w-full sm:max-w-md" data-svelte-h="svelte-2kxffk">
+    <img
+      class="mx-auto h-12 w-auto"
+      src="assets/images/logo.svg"
+      alt="DrCOPD Logo"
+    />
+    <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+      Sign in to your account
+    </h2>
+    <p class="mt-2 text-center text-sm text-gray-600">
+      Or
+      <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"
+        >create a new account</a
+      >
+    </p>
+  </div>
+  <div class="mt-6 sm:mx-auto sm:w-full sm:max-w-md">
+    <div
+      class="border-2 border-red-500 bg-white px-4 py-4 shadow sm:rounded-lg sm:px-10"
+    >
+      <p
+        class="mb-4 text-center text-sm font-medium text-red-600"
+        data-svelte-h="svelte-gt4nd8"
+      >
+        DEMO: Quick Login Options
+      </p>
+      <div class="grid grid-cols-3 gap-3">
+        <button
+          type="button"
+          class="rounded-md border border-gray-300 bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400 disabled:bg-gray-50 disabled:text-gray-400"
+        >
+          Login as Patient
+        </button>
+        <button
+          type="button"
+          class="rounded-md border border-gray-300 bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400 disabled:bg-gray-50 disabled:text-gray-400"
+        >
+          Login as Doctor
+        </button>
+        <button
+          type="button"
+          class="rounded-md border border-gray-300 bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400 disabled:bg-gray-50 disabled:text-gray-400"
+        >
+          Login as Travel Guide
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="bg-white px-4 py-8 shadow sm:rounded-lg sm:px-10">
+      <form class="space-y-6">
+        <div>
+          <label
+            for="email"
+            class="block text-sm font-medium text-gray-700"
+            data-svelte-h="svelte-atmng"
+            >Email address</label
+          >
+          <div class="mt-1">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+              class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 focus:outline-none sm:text-sm"
+              value=""
+            />
+          </div>
+        </div>
+        <div>
+          <label
+            for="password"
+            class="block text-sm font-medium text-gray-700"
+            data-svelte-h="svelte-za2quq"
+            >Password</label
+          >
+          <div class="mt-1">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 focus:outline-none sm:text-sm"
+              value=""
+            />
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <input
+              id="remember-me"
+              name="remember-me"
+              type="checkbox"
+              class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+            />
+            <label
+              for="remember-me"
+              class="ml-2 block text-sm text-gray-900"
+              data-svelte-h="svelte-1gqi4rq"
+              >Remember me</label
+            >
+          </div>
+          <div class="text-sm" data-svelte-h="svelte-gy03fl">
+            <a
+              href="#"
+              class="font-medium text-indigo-600 hover:text-indigo-500"
+              >Forgot your password?</a
+            >
+          </div>
+        </div>
+        <div>
+          <button
+            type="submit"
+            class="disabled:bg-blue/50 rounded-md bg-blue-700 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+          >
+            Sign in
+          </button>
+        </div>
+      </form>
+      <div class="mt-6">
+        <div class="relative" data-svelte-h="svelte-1fy00gj">
+          <div class="absolute inset-0 flex items-center">
+            <div class="w-full border-t border-gray-300"></div>
+          </div>
+          <div class="relative flex justify-center text-sm">
+            <span class="bg-white px-2 text-gray-500">Or continue with</span>
+          </div>
+        </div>
+        <div class="mt-6 grid grid-cols-3 gap-3">
+          <div>
+            <button
+              type="button"
+              class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 shadow-sm hover:bg-gray-50"
+              data-svelte-h="svelte-1gdruwd"
+            >
+              <span class="sr-only">Sign in with Google</span>
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 shadow-sm hover:bg-gray-50"
+              data-svelte-h="svelte-3rcit3"
+            >
+              <span class="sr-only">Sign in with Apple</span>
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 shadow-sm hover:bg-gray-50"
+              data-svelte-h="svelte-hdaonv"
+            >
+              <span class="sr-only">Sign in with Microsoft</span>
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M11.4 24H0V12.6h11.4V24zM24 24H12.6V12.6H24V24zM11.4 11.4H0V0h11.4v11.4zM24 11.4H12.6V0H24v11.4z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
