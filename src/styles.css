@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+:root {
+  --brandColorPrimary: rgb(0 57 91 / var(--tw-bg-opacity, 1));
+}
+
+@theme {
+  --color-brandColorPrimary: var(--brandColorPrimary);
+}
