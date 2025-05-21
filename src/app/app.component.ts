@@ -12,6 +12,7 @@ import { CtaComponent } from './containers/cta/cta.component';
 import { FaqComponent } from './containers/faq/faq.component';
 import { LiveHelpComponent } from './components/live-help/live-help.component';
 import { FooterComponent } from './containers/footer/footer.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -29,6 +30,7 @@ import { FooterComponent } from './containers/footer/footer.component';
     FaqComponent,
     LiveHelpComponent,
     FooterComponent,
+    CommonModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
