@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
     <div class="flex h-[4.5rem] items-center justify-between">
       <div class="flex items-center" data-svelte-h="svelte-1vtvg0e">
-        <a href="index.html" class="group flex items-center"
+        <a [routerLink]="['home']" class="group flex items-center"
           ><img
             src="assets/images/logo.svg"
             alt="DrCOPD"
@@ -18,20 +18,23 @@
         class="hidden min-[820px]:flex min-[820px]:gap-x-4 min-[890px]:gap-x-6"
       >
         <a
-          href="index.html"
-          class="text-nav text-drcopd-blue border-drcopd-blue inline-flex items-center border-b-2 px-1 pt-1 font-medium transition-all duration-250"
+          [routerLink]="['home']"
+          routerLinkActive="underline underline-offset-4 text-blue-600"
+          class="text-nav text-drcopd-blue border-drcopd-blue inline-flex items-center px-1 pt-1 font-medium transition-all duration-250"
           >Home </a
         ><a
-          href="treatment.html"
-          class="text-nav text-drcopd-gray-600 hover:text-drcopd-navy hover:border-drcopd-gray-300 inline-flex items-center px-1 pt-1 font-medium transition-all duration-250 hover:border-b-2"
+          [routerLink]="['/treatments']"
+          routerLinkActive="underline underline-offset-4 text-blue-600"
+          class="text-nav text-drcopd-gray-600 hover:text-drcopd-navy hover:border-drcopd-gray-300 inline-flex items-center px-1 pt-1 font-medium transition-all duration-250"
           >Treatments </a
         ><a
-          href="symptoms.html"
-          class="text-nav text-drcopd-gray-600 hover:text-drcopd-navy hover:border-drcopd-gray-300 inline-flex items-center px-1 pt-1 font-medium transition-all duration-250 hover:border-b-2"
+          routerLinkActive="underline underline-offset-4 text-blue-600"
+          class="text-nav text-drcopd-gray-600 hover:text-drcopd-navy hover:border-drcopd-gray-300 inline-flex items-center px-1 pt-1 font-medium transition-all duration-250"
           >Symptoms </a
         ><a
-          href="about.html"
-          class="text-nav text-drcopd-gray-600 hover:text-drcopd-navy hover:border-drcopd-gray-300 inline-flex items-center px-1 pt-1 font-medium transition-all duration-250 hover:border-b-2"
+          [routerLink]="['/about']"
+          routerLinkActive="underline underline-offset-4 text-blue-600"
+          class="text-nav text-drcopd-gray-600 hover:text-drcopd-navy hover:border-drcopd-gray-300 inline-flex items-center px-1 pt-1 font-medium transition-all duration-250"
           >About COPD
         </a>
       </div>
@@ -117,7 +120,7 @@
           </div>
         </div>
         <!-- <a
-                href="#"
+                
                 class="hidden min-[820px]:inline-flex items-center px-4 py-2 rounded-button bg-drcopd-blue text-white font-medium text-sm transform-gpu hover:scale-105 hover:bg-drcopd-navy hover:text-white hover:shadow-xl active:scale-95 transition-all duration-200 mr-2"
                 data-svelte-h="svelte-qsczmv"
                 >Find Treatment</a
@@ -153,93 +156,6 @@
           </svg>
         </button>
       </div>
-    </div>
-  </div>
-  <div
-    class="border-drcopd-gray-200 hidden border-t bg-white min-[820px]:hidden"
-  >
-    <div class="space-y-1 px-4 pt-2 pb-3">
-      <a
-        href="index.html"
-        class="rounded-button text-drcopd-blue block bg-gray-50 px-3 py-2 text-base font-medium transition-colors duration-250"
-        >Home </a
-      ><a
-        href="treatments.html"
-        class="rounded-button text-drcopd-gray-600 hover:text-drcopd-navy block px-3 py-2 text-base font-medium transition-colors duration-250 hover:bg-gray-50"
-        >Treatments </a
-      ><a
-        href="symptoms.html"
-        class="rounded-button text-drcopd-gray-600 hover:text-drcopd-navy block px-3 py-2 text-base font-medium transition-colors duration-250 hover:bg-gray-50"
-        >Symptoms </a
-      ><a
-        href="about.html"
-        class="rounded-button text-drcopd-gray-600 hover:text-drcopd-navy block px-3 py-2 text-base font-medium transition-colors duration-250 hover:bg-gray-50"
-        >About COPD
-      </a>
-      <div class="px-3 py-2 min-[820px]:hidden">
-        <div class="relative">
-          <input
-            type="search"
-            placeholder="Search symptoms..."
-            class="rounded-button text-drcopd-gray-900 placeholder-drcopd-gray-500 border-drcopd-gray-300 focus:border-drcopd-blue focus:ring-drcopd-blue/30 w-full border bg-gray-50 py-2 pr-4 pl-10 transition-colors duration-250"
-            value=""
-          />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide-icon lucide lucide-search text-drcopd-gray-400 pointer-events-none absolute top-2.5 left-3 h-5 w-5"
-          >
-            <circle cx="11" cy="11" r="8"></circle>
-            <path d="m21 21-4.3-4.3"></path>
-          </svg>
-        </div>
-      </div>
-      <div class="px-3 py-2 min-[820px]:hidden">
-        <div class="language-selector svelte-1jmdpfu relative w-full">
-          <button
-            type="button"
-            class="relative flex w-full items-center gap-2 rounded-lg bg-white px-3 py-2 text-sm text-gray-700 shadow-sm ring-1 ring-gray-300 ring-inset hover:bg-gray-50"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide-icon lucide lucide-globe size-4"
-            >
-              <circle cx="12" cy="12" r="10"></circle>
-              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-              <path d="M2 12h20"></path>
-            </svg>
-            <span class="hidden min-[890px]:inline">🇬🇧 English</span>
-            <span class="min-[820px]:inline min-[890px]:hidden">🇬🇧 EN</span>
-          </button>
-        </div>
-      </div>
-      <a
-        href="#"
-        class="rounded-button bg-drcopd-blue hover:bg-drcopd-navy mx-3 mt-2 block transform-gpu py-2 text-center text-base font-medium text-white transition-all duration-200 hover:scale-105 hover:text-white hover:shadow-xl active:scale-95 min-[820px]:hidden"
-        data-svelte-h="svelte-m0uie3"
-        >Find Treatment</a
-      >
-      <a
-        href="login.html"
-        class="rounded-button bg-drcopd-navy hover:bg-drcopd-blue mx-3 mt-2 block transform-gpu py-2 text-center text-base font-medium text-white transition-all duration-200 hover:scale-105 hover:text-white hover:shadow-xl active:scale-95 min-[820px]:hidden"
-        data-svelte-h="svelte-5j7bwb"
-        >Login</a
-      >
     </div>
   </div>
 </nav>
