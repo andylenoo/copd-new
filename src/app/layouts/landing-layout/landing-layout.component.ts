@@ -19,7 +19,7 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './landing-layout.component.html',
   styleUrls: ['./landing-layout.component.css'],
   imports: [
-    HeaderComponent,
+    // HeaderComponent,
     HeroSliderComponent,
     DemoComponent,
     SymptomCheckComponent,
@@ -30,7 +30,7 @@ import { RouterOutlet } from '@angular/router';
     CtaComponent,
     FaqComponent,
     LiveHelpComponent,
-    FooterComponent,
+    // FooterComponent,
     CommonModule,
     RouterOutlet,
   ],

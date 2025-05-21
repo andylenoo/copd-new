@@ -8,7 +8,7 @@ import { FooterComponent } from './containers/footer/footer.component';
 @Component({
   selector: 'app-root',
   imports: [
-    LandingLayoutComponent,
+    // LandingLayoutComponent,
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
