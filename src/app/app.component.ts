@@ -4,6 +4,14 @@ import { HeaderComponent } from './containers/header/header.component';
 import { HeroSliderComponent } from './components/hero-slider/hero-slider.component';
 import { DemoComponent } from './containers/demo/demo.component';
 import { SymptomCheckComponent } from './containers/symptom-check/symptom-check.component';
+import { TreatmentComponent } from './containers/treatment/treatment.component';
+import { StatsComponent } from './containers/stats/stats.component';
+import { FeaturesComponent } from './containers/features/features.component';
+import { TestimonialsComponent } from './containers/testimonials/testimonials.component';
+import { CtaComponent } from './containers/cta/cta.component';
+import { FaqComponent } from './containers/faq/faq.component';
+import { LiveHelpComponent } from './components/live-help/live-help.component';
+import { FooterComponent } from './containers/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +21,14 @@ import { SymptomCheckComponent } from './containers/symptom-check/symptom-check.
     HeroSliderComponent,
     DemoComponent,
     SymptomCheckComponent,
+    TreatmentComponent,
+    StatsComponent,
+    FeaturesComponent,
+    TestimonialsComponent,
+    CtaComponent,
+    FaqComponent,
+    LiveHelpComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
