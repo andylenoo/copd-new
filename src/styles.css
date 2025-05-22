@@ -4,10 +4,12 @@
   --brandColorPrimary: rgb(0 57 91 / var(--tw-bg-opacity, 1));
   --brandColorPrimaryHover: #01578a;
   --brandColorSecondaryHover: #d1d1d1;
+  --borderColor: #cdcdcd;
 }
 
 @theme {
   --color-brandColorPrimary: var(--brandColorPrimary);
   --color-brandColorPrimaryHover: var(--brandColorPrimaryHover);
   --color-brandColorSecondaryHover: var(--brandColorSecondaryHover);
+  --color-borderColor: var(--borderColor);
 }
