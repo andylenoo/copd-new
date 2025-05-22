@@ -13,6 +13,7 @@ import { DemoComponent } from '../../containers/demo/demo.component';
 import { HeroSliderComponent } from '../../components/hero-slider/hero-slider.component';
 import { HeaderComponent } from '../../containers/header/header.component';
 import { RouterOutlet } from '@angular/router';
+import { VideoComponent } from '../../components/video/video.component';
 
 @Component({
   selector: 'app-landing-layout',
@@ -33,6 +34,7 @@ import { RouterOutlet } from '@angular/router';
     // FooterComponent,
     CommonModule,
     RouterOutlet,
+    VideoComponent,
   ],
 })
 export class LandingLayoutComponent implements OnInit {
