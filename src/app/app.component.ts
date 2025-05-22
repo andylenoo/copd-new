@@ -4,6 +4,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './containers/header/header.component';
 import { FooterComponent } from './containers/footer/footer.component';
+import { Cta2Component } from './components/cta/cta.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { FooterComponent } from './containers/footer/footer.component';
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
+    Cta2Component,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

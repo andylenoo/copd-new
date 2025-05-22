@@ -1,0 +1,8 @@
+.custom-bg {
+  background: radial-gradient(
+    ellipse at bottom,
+    rgb(0 57 91 / var(--tw-bg-opacity, 1)),
+    #000000,
+    #000000
+  );
+}
