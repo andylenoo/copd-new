@@ -1,0 +1,224 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #01578a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hamburger-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-btn:hover {
+  transform: scale(1.1);
+}
+
+.hamburger-btn:focus {
+  outline: none;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(135deg, #667eea 0%, #01578a 100%);
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center;
+}
+
+.hamburger-btn.active .line1 {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger-btn.active .line2 {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.hamburger-btn.active .line3 {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 998;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 280px;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #01578a 100%);
+  padding: 80px 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: left 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 999;
+  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin: 0;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: none;
+}
+
+.mobile-menu.active .menu-item {
+  animation: slideInLeft 0.4s ease forwards;
+}
+
+.mobile-menu.active .menu-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.mobile-menu.active .menu-item:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.mobile-menu.active .menu-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.mobile-menu.active .menu-item:nth-child(4) {
+  animation-delay: 0.25s;
+}
+.mobile-menu.active .menu-item:nth-child(5) {
+  animation-delay: 0.3s;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.menu-item a {
+  display: block;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.menu-item a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-left-color: white;
+  transform: translateX(10px);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 30px;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.mobile-menu.active .social-links {
+  animation: slideInUp 0.4s ease 0.4s forwards;
+}
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.social-link {
+  color: white;
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Desktop styles - hide hamburger on larger screens */
+@media (min-width: 1024px) {
+  .hamburger-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .menu-overlay {
+    display: none;
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent body scroll when menu is open */
+body.menu-open {
+  overflow: hidden;
+}
