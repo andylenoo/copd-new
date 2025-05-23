@@ -1,6 +1,4 @@
-<div
-  class="relative mt-10 ml-6 space-y-16 border-gray-200 px-5 pb-[80px] lg:px-[250px]"
->
+<div class="relative mt-10 ml-6 space-y-16 border-gray-200 px-5 pb-[80px]">
   <div *ngFor="let service of services" class="group relative flex items-start">
     <div
       class="absolute -left-8 flex h-10 w-10 items-center justify-center rounded-full border-2"
@@ -18,8 +16,8 @@
       class="border-borderColor absolute top-13 -left-3.5 h-[170px] border-2"
     ></div>
 
-    <div class="ml-4 grid flex-1 grid-cols-1 items-center gap-4 md:grid-cols-2">
-      <div>
+    <div class="ml-4 grid flex-1 grid-cols-1 items-start gap-4 md:grid-cols-2">
+      <div class="">
         <h3 class="text-lg font-semibold">{{ service.title }}</h3>
         <p class="mt-2 text-sm text-gray-600">{{ service.description }}</p>
       </div>

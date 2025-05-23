@@ -15,6 +15,7 @@ import { Cta2Component } from './components/cta/cta.component';
     FooterComponent,
     Cta2Component,
   ],
+  // standalone: false,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
