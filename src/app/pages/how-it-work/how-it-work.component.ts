@@ -11,9 +11,9 @@ export class HowItWorkComponent {
   services = [
     {
       id: 1,
-      title: 'Send Your COPD Quiz',
+      title: 'Send Your COPD Assessment',
       description:
-        'After you send your quiz our doctors will prepare your detailed paper and check your current health state.',
+        'After you send your assessment our doctors will prepare your detailed paper and check your current health state.',
       image: 'assets/images/photo-1576091160550-2173dba999ef.jpg',
       active: true,
     },
