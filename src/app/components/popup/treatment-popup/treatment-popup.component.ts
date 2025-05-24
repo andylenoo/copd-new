@@ -4,6 +4,7 @@ import {
   Input,
   OnInit,
   Output,
+  Renderer2,
   SimpleChanges,
 } from '@angular/core';
 
@@ -35,19 +36,28 @@ export class TreatmentPopupComponent implements OnInit {
   private autoCloseTimer?: number;
   private progressTimer?: number;
 
-  ngOnInit() {
-    // if (this.showProgress) {
-    //   this.startProgress();
-    // }
-  }
+  constructor(private renderer: Renderer2) {}
+
+  ngOnInit() {}
 
   ngOnDestroy() {
+    this.renderer.removeStyle(document.body, 'overflow-y');
     this.clearTimers();
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes['isVisible']?.currentValue && this.autoClose) {
-      this.startAutoClose();
+    if (changes['isVisible']) {
+      const isVisibleNow = changes['isVisible'].currentValue;
+
+      if (isVisibleNow && this.autoClose) {
+        this.startAutoClose();
+      }
+
+      if (isVisibleNow) {
+        this.renderer.setStyle(document.body, 'overflow-y', 'hidden');
+      } else {
+        this.renderer.removeStyle(document.body, 'overflow-y');
+      }
     }
   }
 
