@@ -83,19 +83,7 @@ export class HospitalsComponent {
       .map((_, i) => i);
   }
 
-  onDestinationClick(destination: string): void {
-    console.log(`Clicked on ${destination}`);
-    // Add your navigation logic here
-  }
+  onDestinationClick(destination: string): void {}
 
-  onImageError(event: any): void {
-    console.error('Image failed to load:', event);
-  }
-
-  // For debugging - check if images exist
-  ngOnInit(): void {
-    this.destinations.forEach((dest) => {
-      console.log('Destination image path:', dest.backgroundImage);
-    });
-  }
+  onImageError(event: any): void {}
 }

@@ -14,7 +14,6 @@ export class HeroSliderComponent {
 
   nextImage() {
     this.currentIndex = (this.currentIndex + 1) % this.images.length;
-    console.log(this.currentIndex);
   }
 
   prevImage() {
