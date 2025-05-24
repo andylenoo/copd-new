@@ -22,7 +22,7 @@
           Making COPD treatment accessible worldwide through expert care and
           medical tourism.
         </p>
-        <div class="flex space-x-6">
+        <!-- <div class="flex space-x-6">
           <a
             class="text-drcopd-gray-400 transition-colors duration-250 hover:text-white"
             ><span class="sr-only">Facebook</span>
@@ -63,7 +63,7 @@
               ></path>
             </svg>
           </a>
-        </div>
+        </div> -->
       </div>
       <div class="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
         <div class="md:grid md:grid-cols-2 md:gap-8">
@@ -77,12 +77,14 @@
             <ul role="list" class="mt-4 space-y-4">
               <li>
                 <a
+                  [routerLink]="['/treatments']"
                   class="text-base text-gray-300 transition-colors duration-250 hover:text-white"
                   >Treatment Options</a
                 >
               </li>
               <li>
                 <a
+                  [routerLink]="['/diagnose']"
                   class="text-base text-gray-300 transition-colors duration-250 hover:text-white"
                   >Symptom Checker</a
                 >
@@ -99,24 +101,26 @@
             <ul role="list" class="mt-4 space-y-4">
               <li>
                 <a
+                  [routerLink]="['/about']"
                   class="text-base text-gray-300 transition-colors duration-250 hover:text-white"
                   >About COPD</a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a
                   class="text-base text-gray-300 transition-colors duration-250 hover:text-white"
                   >Patient Resources</a
                 >
-              </li>
-              <li>
+              </li> -->
+              <!-- <li>
                 <a
                   class="text-base text-gray-300 transition-colors duration-250 hover:text-white"
                   >FAQs</a
                 >
-              </li>
+              </li> -->
               <li>
                 <a
+                  [routerLink]="['/contact-us']"
                   class="text-base text-gray-300 transition-colors duration-250 hover:text-white"
                   >Contact</a
                 >
@@ -140,7 +144,7 @@
                   >About Us</a
                 >
               </li>
-
+              <!-- 
               <li>
                 <a
                   class="text-base text-gray-300 transition-colors duration-250 hover:text-white"
@@ -152,7 +156,7 @@
                   class="text-base text-gray-300 transition-colors duration-250 hover:text-white"
                   >Partners</a
                 >
-              </li>
+              </li> -->
             </ul>
           </div>
           <div class="mt-12 md:mt-0">
@@ -186,7 +190,57 @@
         </div>
       </div>
     </div>
-    <div class="mt-8 border-t border-white/10 pt-8">
+
+    <div class="max-w-[392px] rounded-2xl py-8">
+      <div class="">
+        <h2 class="font-semibold text-white">
+          Talk to a COPD Support Specialist
+        </h2>
+        <p class="mt-1 text-sm text-gray-200">
+          Fill out the form and we'll call you back shortly.
+        </p>
+      </div>
+      <form action="#" method="POST" class="mt-6 grid gap-3">
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          autocomplete="given-name"
+          placeholder="First name"
+          class="border-borderColor rounded-md border bg-[#3a5d7064] px-3 py-2 text-sm text-gray-300 placeholder-gray-400"
+        />
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          autocomplete="family-name"
+          placeholder="Last name"
+          class="border-borderColor rounded-md border bg-[#3a5d7064] px-3 py-2 text-sm text-gray-300 placeholder-gray-400"
+        />
+        <input
+          type="text"
+          name="phone-number"
+          id="phone-number"
+          placeholder="+1 123-456-7890"
+          class="border-borderColor rounded-md border bg-[#3a5d7064] px-3 py-2 text-sm text-gray-300 placeholder-gray-400"
+        />
+        <textarea
+          name="message"
+          id="message"
+          rows="3"
+          placeholder="Please state when and how you want to be contacted"
+          class="border-borderColor rounded-md border bg-[#3a5d7064] px-3 py-2 text-sm text-gray-300 placeholder-gray-400"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-brandColorPrimaryHover mt-2 w-full rounded-md px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-104"
+        >
+          Let's talk
+        </button>
+      </form>
+    </div>
+
+    <!-- <div class="mt-8 border-t border-white/10 pt-8">
       <div class="max-w-md">
         <h3
           class="text-base font-semibold text-white"
@@ -230,7 +284,7 @@
           </button>
         </form>
       </div>
-    </div>
+    </div> -->
     <div class="mt-8 border-t border-white/10 pt-8">
       <p class="text-base text-gray-300 xl:text-center">
         © 2025 DrCOPD. All rights reserved.

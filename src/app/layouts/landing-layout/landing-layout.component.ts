@@ -14,6 +14,8 @@ import { HeroSliderComponent } from '../../components/hero-slider/hero-slider.co
 import { HeaderComponent } from '../../containers/header/header.component';
 import { RouterOutlet } from '@angular/router';
 import { VideoComponent } from '../../components/video/video.component';
+import { VideoConsultationComponent } from '../../components/video-consultation/video-consultation.component';
+import { CompactContactUsComponent } from '../../components/compact-contact-us/compact-contact-us.component';
 
 @Component({
   selector: 'app-landing-layout',
@@ -35,6 +37,8 @@ import { VideoComponent } from '../../components/video/video.component';
     CommonModule,
     RouterOutlet,
     VideoComponent,
+    VideoConsultationComponent,
+    CompactContactUsComponent,
   ],
 })
 export class LandingLayoutComponent implements OnInit {

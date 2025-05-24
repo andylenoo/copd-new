@@ -1,0 +1,56 @@
+<div class="flex min-h-screen flex-col bg-[#0b1e3f] text-white md:flex-row">
+  <div
+    class="flex flex-1 flex-col items-center justify-center bg-[#0b1e3f] p-8"
+  >
+    <div class="mb-6 rounded-lg bg-white">
+      <img
+        src="assets/images/assessment.jpeg"
+        alt="BosleyRx Products"
+        class="h-50 w-auto object-contain"
+      />
+    </div>
+    <h2 class="text-2xl font-semibold">Free Diagnostic Tool</h2>
+    <p class="mt-2 max-w-sm text-center text-base text-gray-300">
+      Take this quick 2-minute assessment to discover your COPD severity level
+      and get matched with your ideal treatment + travel plan.
+    </p>
+
+    <p class="mt-2 max-w-sm text-center text-base text-gray-300">
+      At the end, unlock a personalized plan + concierge help for your 30-day
+      COPD wellness journey.
+    </p>
+    <button
+      [routerLink]="['/diagnose']"
+      class="mt-6 rounded-md bg-blue-100 px-6 py-3 font-semibold text-[#0b1e3f] transition hover:bg-blue-200"
+    >
+      Start Your 30-Day COPD Recovery Program
+    </button>
+  </div>
+
+  <div
+    style="
+      background-image: url(&quot;assets/images/video-consultating.jpg&quot;);
+      background-size: cover;
+      background-position: center;
+    "
+    class="relative flex flex-1 flex-col items-center justify-center p-8 text-[#0b1e3f]"
+  >
+    <div class="w-full max-w-md rounded-lg bg-white p-6 shadow-lg">
+      <h2 class="mb-4 text-2xl font-bold">
+        <span class="mb-2 inline-block px-2 py-1 text-black">
+          Instant Video Consultations Now Available
+        </span>
+      </h2>
+      <p class="mb-6 text-gray-700">
+        Don’t want to wait? Schedule an instant video consultation with a DrCOPD
+        specialist today.
+      </p>
+      <button
+        [routerLink]="['/contact-us']"
+        class="rounded-md bg-[#0b1e3f] px-6 py-3 font-semibold text-white transition hover:bg-[#123366]"
+      >
+        Schedule a Free Consultation Now
+      </button>
+    </div>
+  </div>
+</div>
