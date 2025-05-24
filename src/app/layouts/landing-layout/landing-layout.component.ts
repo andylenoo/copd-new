@@ -16,6 +16,7 @@ import { RouterOutlet } from '@angular/router';
 import { VideoComponent } from '../../components/video/video.component';
 import { VideoConsultationComponent } from '../../components/video-consultation/video-consultation.component';
 import { CompactContactUsComponent } from '../../components/compact-contact-us/compact-contact-us.component';
+import { HospitalsComponent } from '../../components/hospitals/hospitals.component';
 
 @Component({
   selector: 'app-landing-layout',
@@ -39,6 +40,7 @@ import { CompactContactUsComponent } from '../../components/compact-contact-us/c
     VideoComponent,
     VideoConsultationComponent,
     CompactContactUsComponent,
+    HospitalsComponent,
   ],
 })
 export class LandingLayoutComponent implements OnInit {

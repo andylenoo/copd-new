@@ -1,0 +1,204 @@
+<!-- <div class="bg-white py-12">
+  <div class="mb-8 text-center">
+    <p class="tracking-widest text-gray-500 uppercase">Locations Worldwide</p>
+    <h2 class="mt-2 text-4xl font-bold text-indigo-700">
+      Other Popular Destinations
+    </h2>
+  </div>
+
+  <div class="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 md:grid-cols-3">
+    <div class="group relative h-80 overflow-hidden rounded-lg">
+      <img
+        src="assets/images/acibadem.jpg"
+        alt="acibadem"
+        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+      />
+      <div
+        class="bg-opacity-30 absolute inset-0 flex items-center justify-center bg-blue-500 backdrop-blur-sm"
+      >
+        <div class="border-b-2 border-white px-4 text-xl font-bold text-white">
+          Acibadem
+        </div>
+      </div>
+    </div>
+
+    <div class="group relative h-80 overflow-hidden rounded-lg">
+      <img
+        src="assets/images/medicana.jpg"
+        alt="medicana"
+        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+      />
+      <div
+        class="bg-opacity-30 absolute inset-0 flex items-center justify-center bg-purple-600 backdrop-blur-sm"
+      >
+        <div class="border-b-2 border-white px-4 text-xl font-bold text-white">
+          Medicana
+        </div>
+      </div>
+    </div>
+
+    <div class="group relative h-80 overflow-hidden rounded-lg">
+      <img
+        src="assets/images/memorial.jpg"
+        alt="Memorial"
+        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+      />
+      <div
+        class="bg-opacity-30 absolute inset-0 flex items-center justify-center bg-purple-600 backdrop-blur-sm"
+      >
+        <div class="border-b-2 border-white px-4 text-xl font-bold text-white">
+          Memorial
+        </div>
+      </div>
+    </div>
+
+    <div class="group relative h-80 overflow-hidden rounded-lg">
+      <img
+        src="assets/images/liv.jpg"
+        alt="Liv"
+        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+      />
+      <div
+        class="bg-opacity-30 absolute inset-0 flex items-center justify-center bg-purple-600 backdrop-blur-sm"
+      >
+        <div class="border-b-2 border-white px-4 text-xl font-bold text-white">
+          Liv
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="group relative flex h-80 items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-rose-200 via-amber-200 to-orange-200"
+    >
+      <div class="border-b-2 border-white px-4 text-xl font-bold text-white">
+        EXPLORE MORE
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="relative">
+  <div class="flex h-80 w-full overflow-hidden">
+    <!-- Slider Container -->
+    <div class="flex-1 overflow-hidden">
+      <div
+        class="flex h-full transition-transform duration-500 ease-in-out"
+        [style.transform]="'translateX(-' + currentSlide * 33.333 + '%)'"
+      >
+        <div
+          *ngFor="let destination of destinations; let i = index"
+          class="group relative flex-shrink-0 cursor-pointer overflow-hidden"
+          [style.width]="'33.333%'"
+          (click)="onDestinationClick(destination.title)"
+        >
+          <div
+            class="absolute inset-0 bg-gray-300 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+            [style.background-image]="
+              'url(' + destination.backgroundImage + ')'
+            "
+            (error)="onImageError($event)"
+          ></div>
+          <div [class]="destination.customClass"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="transform rounded-full border border-white/30 bg-white/20 px-8 py-4 backdrop-blur-sm transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30"
+            >
+              <h2 class="text-2xl font-bold tracking-wider text-white">
+                {{ destination.title }}
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Explore More Card -->
+    <!-- <div
+      class="group relative flex-shrink-0 cursor-pointer overflow-hidden bg-gradient-to-br from-amber-100 to-orange-200"
+      style="width: 25%"
+    >
+      <div
+        class="absolute inset-0 transition-all duration-500 group-hover:bg-gradient-to-br group-hover:from-amber-200 group-hover:to-orange-300"
+      ></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div
+          class="transform text-center transition-all duration-300 group-hover:scale-105"
+        >
+          <h2 class="mb-2 text-2xl font-bold tracking-wider text-amber-800">
+            EXPLORE MORE
+          </h2>
+          <div class="mx-auto h-0.5 w-16 bg-amber-800 opacity-60"></div>
+        </div>
+      </div>
+      <div
+        class="absolute top-8 right-8 h-12 w-12 rotate-45 transform rounded-full border-2 border-amber-800/20 transition-transform duration-700 group-hover:rotate-90"
+      ></div>
+      <div
+        class="absolute bottom-8 left-8 h-8 w-8 rounded-full border-2 border-amber-800/20 transition-transform duration-700 group-hover:scale-125"
+      ></div>
+    </div> -->
+  </div>
+
+  <!-- Navigation Controls -->
+  <div
+    class="absolute top-1/2 left-4 z-10 -translate-y-1/2 transform"
+    *ngIf="showPrevButton()"
+  >
+    <button
+      (click)="previousSlide()"
+      class="group flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-white/20 text-white backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white/30"
+    >
+      <svg
+        class="h-6 w-6 transform transition-transform group-hover:-translate-x-1"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 19l-7-7 7-7"
+        ></path>
+      </svg>
+    </button>
+  </div>
+
+  <div
+    class="absolute top-1/2 right-1 z-10 mr-4 -translate-y-1/2 transform"
+    *ngIf="showNextButton()"
+  >
+    <button
+      (click)="nextSlide()"
+      class="group flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-white/20 text-white backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white/30"
+    >
+      <svg
+        class="h-6 w-6 transform transition-transform group-hover:translate-x-1"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"
+        ></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Slide Indicators -->
+  <div
+    class="absolute bottom-4 left-1/2 flex -translate-x-1/2 transform space-x-2"
+    *ngIf="destinations.length > 3"
+  >
+    <button
+      *ngFor="let slide of getSlideIndicators(); let i = index"
+      (click)="goToSlide(i)"
+      [class]="
+        'h-2 w-2 rounded-full transition-all duration-300 ' +
+        (currentSlide === i ? 'bg-white' : 'bg-white/50 hover:bg-white/70')
+      "
+    ></button>
+  </div>
+</div>
