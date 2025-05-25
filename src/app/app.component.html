@@ -1,6 +1,7 @@
-<!-- <app-landing-layout></app-landing-layout> -->
-<app-header></app-header>
-
+<div #box>
+  <app-header *ngIf="!isMobile()"></app-header>
+  <app-hamburger-menu *ngIf="isMobile()"></app-hamburger-menu>
+</div>
 <router-outlet></router-outlet>
 
 <a

@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
-import { LandingLayoutComponent } from './layouts/landing-layout/landing-layout.component';
-import { LoginComponent } from './pages/login/login.component';
+import {
+  Component,
+  computed,
+  ElementRef,
+  signal,
+  ViewChild,
+} from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './containers/header/header.component';
 import { FooterComponent } from './containers/footer/footer.component';
 import { Cta2Component } from './components/cta/cta.component';
 import { filter } from 'rxjs';
+import { HamburgerMenuService } from './services/hamburger-menu.service';
+import { HamburgerMenuComponent } from './containers/hamburger-menu/hamburger-menu.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +21,8 @@ import { filter } from 'rxjs';
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
-    Cta2Component,
+    HamburgerMenuComponent,
+    CommonModule,
   ],
   // standalone: false,
   templateUrl: './app.component.html',
@@ -23,7 +31,10 @@ import { filter } from 'rxjs';
 export class AppComponent {
   title = 'copd';
 
-  constructor(private router: Router) {
+  constructor(
+    private router: Router,
+    private hamburgerMenu: HamburgerMenuService,
+  ) {
     this.router.events
       .pipe(filter((e) => e instanceof NavigationEnd))
       .subscribe(() => {
@@ -31,5 +42,27 @@ export class AppComponent {
         document.body.scrollTop = 0;
         window.scrollTo(0, 0);
       });
+  }
+
+  width = signal<number>(0);
+  isMobile = computed(() => this.width() <= 1024);
+
+  @ViewChild('box', { static: true }) box!: ElementRef<HTMLElement>;
+  private ro!: ResizeObserver;
+
+  ngAfterViewInit() {
+    this.ro = new ResizeObserver(([entry]) =>
+      this.width.set(entry.contentRect.width),
+    );
+    this.ro.observe(this.box.nativeElement);
+    this.width.set(this.box.nativeElement.getBoundingClientRect().width);
+  }
+
+  toggleMenu() {
+    this.hamburgerMenu.toggleMenu();
+  }
+
+  closeMenu() {
+    this.hamburgerMenu.closeMenu();
   }
 }
