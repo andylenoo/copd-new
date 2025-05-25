@@ -14,7 +14,7 @@
   (closed)="handlePopupClosed()"
 ></app-cta-popup>
 
-<section class="mb-[80px]">
+<section class="mx-5 mb-[80px] lg:mx-[250px]">
   <h2 class="text-brandColorPrimary mt-5 mb-10 text-center text-4xl font-bold">
     Treatments of COPD
   </h2>
@@ -79,7 +79,7 @@
           viewBox="0 -960 960 960"
           width="24px"
           fill="#9913b0
-"
+  "
         >
           <path
             d="M420-260h120v-100h100v-120H540v-100H420v100H320v120h100v100ZM280-120q-33 0-56.5-23.5T200-200v-440q0-33 23.5-56.5T280-720h400q33 0 56.5 23.5T760-640v440q0 33-23.5 56.5T680-120H280Zm0-80h400v-440H280v440Zm-40-560v-80h480v80H240Zm40 120v440-440Z"
@@ -379,5 +379,169 @@
         </svg>
       </div>
     </div>
+
+    <div
+      class="col-span-2 flex items-start gap-4 rounded-xl bg-white p-6 shadow-sm"
+    >
+      <div class="rounded-md bg-red-50 p-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#992B15"
+        >
+          <path
+            d="M320-120v-200H120v-320h200v-200h320v200h200v320H640v200H320Zm80-80h160v-200h200v-160H560v-200H400v200H200v160h200v200Zm80-280Z"
+          />
+        </svg>
+      </div>
+      <div class="flex-1">
+        <h3 class="text-brandColorPrimary text-lg font-semibold">
+          COPD Balloon Treatment
+        </h3>
+        <p class="mb-3 text-gray-500">
+          COPD balloon treatment, also known as "desquamation" or "Broncho Muco
+          Cleaner," is an innovative bronchoscopic procedure primarily used in
+          Turkey for patients with chronic bronchitis, a component of COPD,
+          characterized by airway narrowing and thickening of goblet cells due
+          to tobacco exposure.
+        </p>
+        <strong>Target</strong>
+        <ul class="list-disc text-sm text-gray-500">
+          <li class="mb-3">
+            The treatment focuses on removing goblet cells from the inner layer
+            of accessible respiratory pathways, primarily airways ranging from 3
+            to 8 mm in diameter. Goblet cells are responsible for excessive
+            mucus production, which contributes to airway obstruction in chronic
+            bronchitis.
+          </li>
+        </ul>
+        <strong>Procedure</strong>
+        <ul class="list-disc text-sm text-gray-500">
+          <li>
+            A bronchoscope is inserted through an intubation tube into the
+            patient's airways.
+          </li>
+          <li>
+            COPD balloons, chosen to match the diameter of the bronchi, are
+            advanced through the bronchoscope.
+          </li>
+          <li>
+            These balloons, made of polyisoprene and covered with a
+            thermoplastic polystyrene weave (or a latex-free mesh), are inflated
+            and deflated with adjustable pressure and frequency using an
+            electronic pump.
+          </li>
+          <li>
+            The scraping action of the balloon on the thickened inner layer of
+            the bronchi is intended to restore it to its original thickness.
+            This process, termed "desquamation," aims to transform the thickened
+            goblet cell layer into a foamy liquid.
+          </li>
+          <li class="mb-3">
+            The foamy liquid, containing the removed goblet cells, is then
+            aspirated through the bronchoscope channel and expelled.
+          </li>
+        </ul>
+        <strong>Goal</strong>
+        <ul class="list-disc text-sm text-gray-500">
+          <li class="mb-3">
+            The primary objective is to relieve chronic bronchitis caused by
+            smoking and restore the altered bronchial epithelium layer, thereby
+            improving airway width and reducing mucus production.
+          </li>
+        </ul>
+
+        <strong>Key Features</strong>
+        <ul class="list-disc text-sm text-gray-500">
+          <li>
+            Mechanical Solution: It's presented as a mechanical solution without
+            the placement of foreign bodies in the airway.
+          </li>
+          <li>
+            Painless and Non-invasive: Claims are made that the procedure is
+            painless, non-invasive, and allows for an immediate return to daily
+            life.
+          </li>
+          <li class="mb-3">
+            Availability: Currently, this specific "COPD balloon treatment" or
+            "Broncho Muco Cleaner" appears to be primarily available in Turkey.
+          </li>
+        </ul>
+        <button
+          [routerLink]="['/diagnose']"
+          class="mt-8 self-center rounded-md bg-[#01578a] px-6 py-3 text-xs font-semibold text-white shadow-lg transition-all duration-300 hover:scale-102 hover:bg-[#0270b4]"
+        >
+          Talk to a Specialist
+        </button>
+      </div>
+
+      <div class="text-gray-400">
+        <svg
+          class="h-5 w-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path d="M17 7l-10 10M7 7h10v10" />
+        </svg>
+      </div>
+    </div>
   </div>
 </section>
+
+<div
+  class="border-borderColor flex flex-col justify-center gap-10 border-t border-b bg-[#e8e8e8b5] px-4 py-18 lg:flex-row"
+>
+  <video class="w-full rounded-2xl lg:ml-15 lg:h-[495px] lg:w-[875px]" controls>
+    <source src="assets/videos/video-english.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="flex flex-col gap-5 text-center lg:text-left">
+    <span class="text-gray-600 uppercase">We change lives:</span>
+    <h2 class="text-brandColorPrimary text-4xl leading-[50px] font-bold">
+      Schedule a Free Consultation Now
+    </h2>
+    <form action="#" method="POST" class="mt-6 grid gap-3">
+      <input
+        type="text"
+        name="first-name"
+        id="first-name"
+        autocomplete="given-name"
+        placeholder="First name"
+        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-500"
+      />
+      <input
+        type="text"
+        name="last-name"
+        id="last-name"
+        autocomplete="family-name"
+        placeholder="Last name"
+        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-500"
+      />
+      <input
+        type="text"
+        name="phone-number"
+        id="phone-number"
+        placeholder="+1 123-456-7890"
+        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-500"
+      />
+      <textarea
+        name="message"
+        id="message"
+        rows="3"
+        placeholder="Please state when and how you want to be contacted"
+        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-500"
+      ></textarea>
+      <button
+        type="submit"
+        class="bg-brandColorPrimaryHover mt-2 w-full rounded-md px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-104"
+      >
+        Let's talk
+      </button>
+    </form>
+  </div>
+</div>

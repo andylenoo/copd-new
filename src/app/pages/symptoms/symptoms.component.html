@@ -16,7 +16,7 @@
   (closed)="handlePopupClosed()"
 ></app-cta-popup>
 
-<div class="mb-[80px]">
+<div class="mx-5 mb-[80px] lg:mx-[250px]">
   <h2 class="text-brandColorPrimary mt-5 mb-10 text-center text-4xl font-bold">
     Common Symptoms
   </h2>
@@ -104,7 +104,63 @@
     </div>
   </section>
 
-  <div class="absolute right-0 left-0 w-full">
+  <div class="-mx-5 lg:-mx-[250px]">
+    <div
+      class="border-borderColor flex flex-col justify-center gap-10 border-t border-b bg-[#e8e8e8b5] px-4 py-18 lg:flex-row"
+    >
+      <video
+        class="w-full rounded-2xl lg:ml-15 lg:h-[495px] lg:w-[875px]"
+        controls
+      >
+        <source src="assets/videos/symptoms.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="flex flex-col gap-5 text-center lg:text-left">
+        <span class="text-gray-600 uppercase">We change lives:</span>
+        <h2 class="text-brandColorPrimary text-4xl leading-[50px] font-bold">
+          Schedule a Free Consultation Now
+        </h2>
+        <form action="#" method="POST" class="mt-6 grid gap-3">
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            autocomplete="given-name"
+            placeholder="First name"
+            class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-500"
+          />
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            autocomplete="family-name"
+            placeholder="Last name"
+            class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-500"
+          />
+          <input
+            type="text"
+            name="phone-number"
+            id="phone-number"
+            placeholder="+1 123-456-7890"
+            class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-500"
+          />
+          <textarea
+            name="message"
+            id="message"
+            rows="3"
+            placeholder="Please state when and how you want to be contacted"
+            class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-500"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-brandColorPrimaryHover mt-2 w-full rounded-md px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-104"
+          >
+            Let's talk
+          </button>
+        </form>
+      </div>
+    </div>
     <!-- <app-cta2></app-cta2> -->
     <app-compact-contact-us></app-compact-contact-us>
   </div>
@@ -112,7 +168,7 @@
 
 <!-- Immediate Attention Section -->
 <h2
-  class="text-brandColorPrimary mt-[670px] mb-10 text-center text-4xl font-bold"
+  class="text-brandColorPrimary mt-[1300px] mb-10 text-center text-4xl font-bold"
 >
   Immediate Action Required
 </h2>
