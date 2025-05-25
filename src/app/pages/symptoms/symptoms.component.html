@@ -1,3 +1,21 @@
+<app-cta-popup
+  *ngIf="isPopupVisible"
+  [isVisible]="isPopupVisible"
+  [title]="'Immediate Action Required'"
+  [description]="
+    'If you have these symptoms consult our COPD specialists immediately.'
+  "
+  [primaryButtonText]="'Book Free Video Call'"
+  [secondaryButtonText]="'Maybe Later'"
+  [smallText]="'Offer expires in 24 hours • Terms apply'"
+  [autoClose]="true"
+  [autoCloseDelay]="8000"
+  [showProgress]="true"
+  (primaryAction)="handlePrimaryAction()"
+  (secondaryAction)="handleSecondaryAction()"
+  (closed)="handlePopupClosed()"
+></app-cta-popup>
+
 <div class="mb-[80px]">
   <h2 class="text-brandColorPrimary mt-5 mb-10 text-center text-4xl font-bold">
     Common Symptoms

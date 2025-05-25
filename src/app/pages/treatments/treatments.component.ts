@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { TreatmentPopupComponent } from '../../components/popup/treatment-popup/treatment-popup.component';
 import { CommonModule } from '@angular/common';
+import { CtaPopupComponent } from '../../components/popup/cta-popup/cta-popup.component';
 
 @Component({
   selector: 'app-treatments-page',
   templateUrl: './treatments.component.html',
   styleUrls: ['./treatments.component.css'],
-  imports: [RouterModule, TreatmentPopupComponent, CommonModule],
+  imports: [RouterModule, CtaPopupComponent, CommonModule],
 })
 export class TreatmentsPageComponent implements OnInit {
   constructor() {}
