@@ -18,12 +18,14 @@ import { RouterModule } from '@angular/router';
 })
 export class CtaPopupComponent implements OnInit {
   @Input() isVisible: boolean = false;
-  @Input() title: string = 'Ready to Get Started?';
-  @Input() description: string =
-    'Join thousands of users who have already discovered the power of our platform. Take the first step towards transformation today.';
-  @Input() primaryButtonText: string = 'Get Started Now';
-  @Input() secondaryButtonText: string = 'Learn More';
-  @Input() smallText: string = 'No credit card required • Cancel anytime';
+  @Input() title?: string = 'Ready to Get Started?';
+  @Input() description?: string = '';
+  @Input() li1?: string = '';
+  @Input() li2?: string = '';
+  @Input() li3?: string = '';
+  @Input() primaryButtonText?: string = '';
+  @Input() secondaryButtonText?: string = '';
+  @Input() smallText?: string = 'No credit card required • Cancel anytime';
   @Input() autoClose: boolean = false;
   @Input() autoCloseDelay: number = 5000;
   @Input() showProgress: boolean = false;

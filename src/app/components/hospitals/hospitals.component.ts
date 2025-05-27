@@ -42,6 +42,24 @@ export class HospitalsComponent {
         'absolute inset-0 bg-gradient-to-br from-red-900/60 via-red-800/40 to-transparent',
     },
     {
+      title: 'MAYO CLINIC',
+      backgroundImage: 'assets/images/mayo-clinic.jpg',
+      customClass:
+        'absolute inset-0 bg-gradient-to-br from-yellow-900/60 via-yellow-800/40 to-transparent',
+    },
+    {
+      title: 'JOHN HOPKINS',
+      backgroundImage: 'assets/images/john-hopkins.jpg',
+      customClass:
+        'absolute inset-0 bg-gradient-to-br from-orange-900/60 via-orange-800/40 to-transparent',
+    },
+    {
+      title: 'STANFORD',
+      backgroundImage: 'assets/images/stanford-hospital.jpg',
+      customClass:
+        'absolute inset-0 bg-gradient-to-br from-pink-900/60 via-pink-800/40 to-transparent',
+    },
+    {
       title: 'EXPLORE MORE',
       backgroundImage: '',
       customClass:
