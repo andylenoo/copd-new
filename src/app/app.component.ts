@@ -13,6 +13,7 @@ import { filter } from 'rxjs';
 import { HamburgerMenuService } from './services/hamburger-menu.service';
 import { HamburgerMenuComponent } from './containers/hamburger-menu/hamburger-menu.component';
 import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -34,7 +35,11 @@ export class AppComponent {
   constructor(
     private router: Router,
     private hamburgerMenu: HamburgerMenuService,
+    // private translate: TranslateService,
   ) {
+    console.log('AppComponent initialized');
+
+    // this.translate.setDefaultLang('en');
     this.router.events
       .pipe(filter((e) => e instanceof NavigationEnd))
       .subscribe(() => {
@@ -42,6 +47,10 @@ export class AppComponent {
         document.body.scrollTop = 0;
         window.scrollTo(0, 0);
       });
+  }
+
+  switchLang(lang: any) {
+    // this.translate.use(lang);
   }
 
   width = signal<number>(0);
