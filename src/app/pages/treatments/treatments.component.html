@@ -21,11 +21,18 @@
     Treatments of COPD
   </h2>
 
+  <p class="mb-[10px] text-gray-700">
+    COPD is a progressive but treatable disease. The treatment of COPD (Chronic
+    Obstructive Pulmonary Disease) depends on the severity of the disease,
+    symptoms, and history of exacerbations. The goals are to reduce symptoms,
+    improve quality of life, prevent exacerbations, and slow disease
+    progression.
+  </p>
+
   <p class="mb-[40px] text-gray-700">
-    The treatment of COPD focuses on relieving symptoms, improving quality of
-    life, slowing disease progression, and preventing complications. While COPD
-    is a chronic condition with no cure, a comprehensive treatment plan can help
-    patients breathe better and stay active.
+    Lifestyle changes (especially quitting smoking), medications, and sometimes
+    oxygen therapy COPD patients can maintain a good quality of life and reduce
+    the risk of complications.
   </p>
 
   <div class="grid grid-cols-1 gap-4 bg-gray-50 p-4 md:grid-cols-2">
@@ -45,13 +52,28 @@
       </div>
       <div class="flex-1">
         <h3 class="text-brandColorPrimary text-lg font-semibold">
-          Lifestyle Changes
+          Lifestyle and Non-Pharmacologic Management
         </h3>
-        <ul class="mt-3 list-disc text-sm text-gray-500">
-          <li>Smoking cessation (most critical)</li>
-          <li>Avoiding lung irritants (pollution, dust, chemicals)</li>
-          <li>Pulmonary rehabilitation (exercise, education, nutrition)</li>
+        <p class="mt-3">Smoking Cessation (most critical)</p>
+        <ul
+          class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
+          <li>The only intervention proven to slow disease progression</li>
+          <li>
+            Offer nicotine replacement therapy, counseling, or medications like
+            varenicline or bupropion
+          </li>
         </ul>
+
+        <p class="mt-3">Pulmonary Rehabilitation</p>
+
+        <ul
+          class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
+          <li>Exercise training, nutrition advice, and education</li>
+          <li>Especially helpful in moderate to severe COPD</li>
+        </ul>
+
         <button
           [routerLink]="['/contact-us']"
           class="mt-8 self-center rounded-md bg-[#01578a] px-6 py-3 text-xs font-semibold text-white shadow-lg transition-all duration-300 hover:scale-102 hover:bg-[#0270b4]"
@@ -90,24 +112,29 @@
       </div>
       <div class="flex-1">
         <h3 class="text-brandColorPrimary text-lg font-semibold">
-          Medications
+          Pharmacologic Treatment
         </h3>
-        <ul class="mt-3 list-disc text-sm text-gray-500">
+        <ul
+          class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
+          <li>SABA (Short-Acting Beta Agonist): albuterol</li>
+          <li>SAMA (Short-Acting Muscarinic Antagonist): ipratropium</li>
+          <li>LABA (Long-Acting Beta Agonist): salmeterol, formoterol</li>
           <li>
-            Bronchodilators (e.g., albuterol, salmeterol): relax airway muscles
+            LAMA (Long-Acting Muscarinic Antagonist): tiotropium, umeclidinium
           </li>
           <li>
-            Inhaled corticosteroids (e.g., fluticasone): reduce inflammation
+            ICS (Inhaled Corticosteroids): fluticasone, budesonide (used in
+            select patients)
           </li>
-          <li>Combination inhalers (LABA + ICS or LABA + LAMA)</li>
-          <li>
-            Phosphodiesterase-4 inhibitors (e.g., roflumilast): reduce
-            inflammation
-          </li>
+        </ul>
 
-          <li>Theophylline (less commonly used)</li>
+        <p class="mt-[10px]">Triple Therapy (LABA + LAMA + ICS)</p>
 
-          <li>Antibiotics (for bacterial exacerbations)</li>
+        <ul
+          class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
+          <li>For severe COPD with frequent exacerbations</li>
         </ul>
         <button
           [routerLink]="['/contact-us']"
@@ -145,10 +172,15 @@
       </div>
       <div class="flex-1">
         <h3 class="text-brandColorPrimary text-lg font-semibold">
-          Oxygen Therapy
+          Suportive Treatment
         </h3>
-        <ul class="mt-3 list-disc text-sm text-gray-500">
-          <li>For patients with low blood oxygen levels</li>
+        <ul
+          class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
+          <li>Oxygen therapy if PaO₂ ≤ 55 mmHg or O₂ sat ≤ 88%</li>
+          <li>
+            Noninvasive ventilation (BiPAP) in hypercapnic respiratory failure
+          </li>
         </ul>
         <button
           [routerLink]="['/contact-us']"
@@ -188,7 +220,9 @@
         <h3 class="text-brandColorPrimary text-lg font-semibold">
           Surgical Options
         </h3>
-        <ul class="mt-3 list-disc text-sm text-gray-500">
+        <ul
+          class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
           <li>Lung volume reduction surgery</li>
           <li>Bullectomy</li>
           <li>Lung transplant (in severe cases)</li>
@@ -231,10 +265,13 @@
         <h3 class="text-brandColorPrimary text-lg font-semibold">
           Vaccinations
         </h3>
-        <ul class="mt-3 list-disc text-sm text-gray-500">
-          <li>
-            Influenza, pneumococcal, and COVID-19 vaccines to prevent infections
-          </li>
+        <ul
+          class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
+          <li>Influenza (yearly)</li>
+          <li>Pneumococcal vaccines (PCV20 or PCV15 + PPSV23)</li>
+          <li>COVID-19</li>
+          <li>Tdap (for pertussis protection)</li>
         </ul>
         <button
           [routerLink]="['/contact-us']"
@@ -274,7 +311,9 @@
         <h3 class="text-brandColorPrimary text-lg font-semibold">
           Management of Exacerbations
         </h3>
-        <ul class="mt-3 list-disc text-sm text-gray-500">
+        <ul
+          class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
           <li>Increased bronchodilators</li>
           <li>Oral corticosteroids</li>
           <li>Short-term antibiotics</li>
@@ -318,7 +357,9 @@
         <h3 class="text-brandColorPrimary text-lg font-semibold">
           Nutritional Support
         </h3>
-        <ul class="mt-3 list-disc text-sm text-gray-500">
+        <ul
+          class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
           <li>Especially in advanced disease stages</li>
         </ul>
         <button
@@ -359,7 +400,7 @@
         <h3 class="text-brandColorPrimary text-lg font-semibold">
           Psychological Support
         </h3>
-        <ul class="mt-3 list-disc text-sm text-gray-500">
+        <ul class="mt-3 list-inside list-disc text-sm text-gray-600">
           <li>For anxiety, depression common in COPD patients</li>
         </ul>
         <button
@@ -400,27 +441,88 @@
       </div>
       <div class="flex-1">
         <h3 class="text-brandColorPrimary text-lg font-semibold">
-          COPD Balloon Treatment
+          Advanced Therapy(Severe COPD)
         </h3>
-        <p class="mb-3 text-gray-500">
+        <!-- <p class="mb-3 text-gray-600">
           COPD balloon treatment, also known as "desquamation" or "Broncho Muco
           Cleaner," is an innovative bronchoscopic procedure primarily used in
           Turkey for patients with chronic bronchitis, a component of COPD,
           characterized by airway narrowing and thickening of goblet cells due
           to tobacco exposure.
+        </p> -->
+        <!-- <strong>Target</strong> -->
+        <ul
+          class="flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
+          <li class="mt-[10px]">
+            NEW Bronchoscopic therapies (Balloon mucocleaning&amp;bronchoplasty,
+            Chriospray, Rheoplasty, Endobronchial valves and Coils)
+          </li>
+          <li>Lung volume reduction surgery</li>
+          <li>Lung transplant (in select young patients)</li>
+        </ul>
+
+        <p class="mt-[10px] text-gray-600">
+          After bronchoscopic treatment of COPD—such as bronchomucocleaning and
+          plasty—patients require structured post-treatment care and follow-up
+          to ensure safety, maximize benefits, and detect complications early.
         </p>
-        <strong>Target</strong>
-        <ul class="list-disc text-sm text-gray-500">
-          <li class="mb-3">
-            The treatment focuses on removing goblet cells from the inner layer
-            of accessible respiratory pathways, primarily airways ranging from 3
-            to 8 mm in diameter. Goblet cells are responsible for excessive
-            mucus production, which contributes to airway obstruction in chronic
-            bronchitis.
+
+        <p class="mt-[10px] font-bold">
+          Post-Bronchomucocleaning and plasty Treatment Plan
+        </p>
+
+        <p class="mt-[15px] mb-[10px]">1. Immediate Post-Procedure Care</p>
+
+        <ul
+          class="flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
+          <li>
+            Hospital observation for 0–1 days (especially COPD with comorbidity)
+          </li>
+          <li>
+            Chest X-ray to monitor conditions such as pneumonia, atelectasis,
+            etc.
+          </li>
+          <li>Oxygen therapy if needed</li>
+          <li>
+            Bronchodilators and inhaled corticosteroids continued or adjusted
           </li>
         </ul>
-        <strong>Procedure</strong>
-        <ul class="list-disc text-sm text-gray-500">
+
+        <p class="mt-[15px] mb-[10px]">
+          2. Short-Term Follow-Up (First 1–3 Months)
+        </p>
+
+        <ul
+          class="flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
+          <li>
+            Clinical exam: Evaluate symptoms, breathing, and oxygen levels
+          </li>
+          <li>Imaging: Chest X-ray or CT scan (if needed) etc.</li>
+          <li>
+            Pulmonary Function Tests (PFTs): To track improvement (e.g., FEV₁,
+            RV)
+          </li>
+        </ul>
+
+        <p class="mt-[15px] mb-[10px]">
+          3. Long-Term Follow-Up (Every 3–6 Months)
+        </p>
+
+        <ul
+          class="flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+        >
+          <li>Pulmonary rehab: Recommended to maintain and improve function</li>
+          <li>PFTs: Every 3–6 months to monitor lung function</li>
+          <li>CT scan: Annually or as needed</li>
+          <li>COPD symptom scores (SS): Monitor quality of life</li>
+          <li>Medication adjustment: As lung mechanics change</li>
+        </ul>
+
+        <!-- <strong>Procedure</strong>
+        <ul class="list-inside list-disc text-sm text-gray-600">
           <li>
             A bronchoscope is inserted through an intubation tube into the
             patient's airways.
@@ -447,7 +549,7 @@
           </li>
         </ul>
         <strong>Goal</strong>
-        <ul class="list-disc text-sm text-gray-500">
+        <ul class="list-inside list-disc text-sm text-gray-600">
           <li class="mb-3">
             The primary objective is to relieve chronic bronchitis caused by
             smoking and restore the altered bronchial epithelium layer, thereby
@@ -456,7 +558,7 @@
         </ul>
 
         <strong>Key Features</strong>
-        <ul class="list-disc text-sm text-gray-500">
+        <ul class="list-inside list-disc text-sm text-gray-600">
           <li>
             Mechanical Solution: It's presented as a mechanical solution without
             the placement of foreign bodies in the airway.
@@ -470,7 +572,7 @@
             Availability: Currently, this specific "COPD balloon treatment" or
             "Broncho Muco Cleaner" appears to be primarily available in Turkey.
           </li>
-        </ul>
+        </ul> -->
         <button
           [routerLink]="['/contact-us']"
           class="mt-8 self-center rounded-md bg-[#01578a] px-6 py-3 text-xs font-semibold text-white shadow-lg transition-all duration-300 hover:scale-102 hover:bg-[#0270b4]"
@@ -514,7 +616,7 @@
         id="first-name"
         autocomplete="given-name"
         placeholder="First name"
-        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-500"
+        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-600"
       />
       <input
         type="text"
@@ -522,21 +624,21 @@
         id="last-name"
         autocomplete="family-name"
         placeholder="Last name"
-        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-500"
+        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-600"
       />
       <input
         type="text"
         name="phone-number"
         id="phone-number"
         placeholder="+1 123-456-7890"
-        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-500"
+        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-600"
       />
       <textarea
         name="message"
         id="message"
         rows="3"
         placeholder="Please state when and how you want to be contacted"
-        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-500"
+        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-600"
       ></textarea>
       <button
         type="submit"
