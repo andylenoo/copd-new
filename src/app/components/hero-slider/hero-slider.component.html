@@ -1,4 +1,4 @@
-<div class="relative mt-[40px] w-full overflow-hidden lg:mt-0 lg:h-screen">
+<!-- <div class="relative mt-[40px] w-full overflow-hidden lg:mt-0 lg:h-screen">
   <div
     class="flex h-full transition-transform duration-500 ease-in-out"
     [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
@@ -144,7 +144,7 @@
         </div>
       </div>
 
-      <!-- Right: Image -->
+   
       <div class="h-full w-full lg:w-1/2">
         <img
           [src]="slide.image"
@@ -167,4 +167,68 @@
   class="bg-opacity-30 absolute top-1/2 right-0 z-10 -translate-y-1/2 transform bg-black px-4 py-2 text-2xl text-white"
 >
   ❯
-</button>
+</button> -->
+
+<section
+  class="flex min-h-screen items-center justify-center bg-gradient-to-br from-black via-[#0e0b19] to-black px-6 text-white"
+>
+  <div
+    class="grid w-full max-w-7xl grid-cols-1 items-center gap-12 md:grid-cols-2"
+  >
+    <div class="space-y-6">
+      <div
+        class="inline-flex w-fit items-center rounded-full border border-[#2d2d3a] bg-[#181827] px-4 py-1.5 text-sm"
+      >
+        <span class="mr-2 h-2 w-2 rounded-full bg-green-500"></span>
+        Available for Work
+      </div>
+
+      <h1 class="text-4xl leading-tight font-extrabold sm:text-5xl lg:text-6xl">
+        Transform your ideas <br />
+        into digital success <br />
+        with us!
+      </h1>
+
+      <p class="max-w-md text-lg text-gray-300">
+        We're your partner in product design, website creation, and branding for
+        every stage of your business.
+      </p>
+
+      <div class="flex space-x-4">
+        <a
+          href="#"
+          class="rounded-lg bg-white px-6 py-3 font-medium text-black transition hover:bg-gray-100"
+        >
+          Services
+        </a>
+        <a
+          href="#"
+          class="rounded-lg border border-gray-600 px-6 py-3 font-medium transition hover:bg-gray-800"
+        >
+          Our work
+        </a>
+      </div>
+    </div>
+
+    <div class="relative h-full w-full bg-transparent">
+      <img
+        class="pointer-events-none absolute inset-0 mx-auto h-full max-h-screen w-full max-w-full object-cover select-none"
+        src="assets/videos/hero.gif"
+        alt=""
+      />
+      <!-- <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="pointer-events-none absolute inset-0 h-full w-full object-cover select-none"
+      >
+        <source
+          src="assets/videos/output-onlinegiftools.gif"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video> -->
+    </div>
+  </div>
+</section>
