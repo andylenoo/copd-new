@@ -1,4 +1,9 @@
-<nav class="shadow-header sticky top-0 z-[60] bg-black text-white">
+<nav
+  [ngClass]="
+    currentRoute === '/home' ? 'bg-black text-white' : 'bg-white text-black'
+  "
+  class="shadow-header sticky top-0 z-[60]"
+>
   <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
     <div class="flex h-[4.5rem] items-center justify-between">
       <div class="flex items-center" data-svelte-h="svelte-1vtvg0e">
