@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FooterComponent } from '../../containers/footer/footer.component';
 import { LiveHelpComponent } from '../../components/live-help/live-help.component';
-import { FaqComponent } from '../../containers/faq/faq.component';
+import { FaqComponent } from '../../components/faq/faq.component';
 import { CtaComponent } from '../../containers/cta/cta.component';
 import { TestimonialsComponent } from '../../containers/testimonials/testimonials.component';
 import { FeaturesComponent } from '../../containers/features/features.component';
@@ -11,14 +10,12 @@ import { TreatmentComponent } from '../../containers/treatment/treatment.compone
 import { SymptomCheckComponent } from '../../containers/symptom-check/symptom-check.component';
 import { DemoComponent } from '../../containers/demo/demo.component';
 import { HeroSliderComponent } from '../../components/hero-slider/hero-slider.component';
-import { HeaderComponent } from '../../containers/header/header.component';
 import { RouterOutlet } from '@angular/router';
 import { VideoComponent } from '../../components/video/video.component';
 import { VideoConsultationComponent } from '../../components/video-consultation/video-consultation.component';
 import { CompactContactUsComponent } from '../../components/compact-contact-us/compact-contact-us.component';
 import { HospitalsComponent } from '../../components/hospitals/hospitals.component';
 import { WhyUsComponent } from '../../components/why-us/why-us.component';
-import { ButtonDemo } from '../../components/ui/button/button.component';
 import { CustomerJourneyComponent } from '../../components/customer-journey/customer-journey.component';
 
 @Component({
@@ -45,7 +42,6 @@ import { CustomerJourneyComponent } from '../../components/customer-journey/cust
     CompactContactUsComponent,
     HospitalsComponent,
     WhyUsComponent,
-    ButtonDemo,
     CustomerJourneyComponent,
   ],
 })

@@ -1,4 +1,4 @@
-<section id="faq" class="svelte-7trwu9 relative bg-gray-50">
+<!-- <section id="faq" class="svelte-7trwu9 relative bg-gray-50">
   <div class="absolute inset-0 z-0" data-svelte-h="svelte-12r4xg">
     <img
       src="assets/images/medical-pattern.jUQSyLsU.jpg"
@@ -147,5 +147,31 @@
         </div>
       </div>
     </div>
+  </div>
+</section> -->
+
+<section class="my-[80px]">
+  <div class="card">
+    <p-accordion [value]="0">
+      @for (tab of tabs; track tab.title) {
+        <p-accordion-panel [value]="tab.value">
+          <p-accordion-header>{{ tab.title }}</p-accordion-header>
+          <p-accordion-content>
+            <p class="m-0">{{ tab.content }}</p>
+            <ul class="mt-2 list-inside list-disc" *ngIf="tab.li1">
+              <li>
+                {{ tab.li1 }}
+              </li>
+              <li>
+                {{ tab.li2 }}
+              </li>
+              <li>
+                {{ tab.li3 }}
+              </li>
+            </ul>
+          </p-accordion-content>
+        </p-accordion-panel>
+      }
+    </p-accordion>
   </div>
 </section>
