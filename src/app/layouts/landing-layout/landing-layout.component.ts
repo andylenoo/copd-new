@@ -17,6 +17,7 @@ import { VideoComponent } from '../../components/video/video.component';
 import { VideoConsultationComponent } from '../../components/video-consultation/video-consultation.component';
 import { CompactContactUsComponent } from '../../components/compact-contact-us/compact-contact-us.component';
 import { HospitalsComponent } from '../../components/hospitals/hospitals.component';
+import { WhyUsComponent } from '../../components/why-us/why-us.component';
 
 @Component({
   selector: 'app-landing-layout',
@@ -41,6 +42,7 @@ import { HospitalsComponent } from '../../components/hospitals/hospitals.compone
     VideoConsultationComponent,
     CompactContactUsComponent,
     HospitalsComponent,
+    WhyUsComponent,
   ],
 })
 export class LandingLayoutComponent implements OnInit {

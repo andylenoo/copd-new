@@ -36,12 +36,12 @@ export class AppComponent {
   constructor(
     private router: Router,
     private hamburgerMenu: HamburgerMenuService,
-    private translate: TranslateService,
+    // private translate: TranslateService,
   ) {
-    console.log('AppComponent initialized');
-    translate.addLangs(['en', 'tr']);
-    translate.setDefaultLang('en');
-    translate.use('tr'); // or detect from browser
+    // console.log('AppComponent initialized');
+    // translate.addLangs(['en', 'tr']);
+    // translate.setDefaultLang('en');
+    // translate.use('tr');
 
     // this.translate.setDefaultLang('en');
     this.router.events
@@ -53,9 +53,9 @@ export class AppComponent {
       });
   }
 
-  switchLang(lang: any) {
-    this.translate.use(lang);
-  }
+  // switchLang(lang: any) {
+  //   this.translate.use(lang);
+  // }
 
   width = signal<number>(0);
   isMobile = computed(() => this.width() <= 1024);
