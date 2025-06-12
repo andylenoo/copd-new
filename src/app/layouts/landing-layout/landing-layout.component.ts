@@ -19,6 +19,7 @@ import { CompactContactUsComponent } from '../../components/compact-contact-us/c
 import { HospitalsComponent } from '../../components/hospitals/hospitals.component';
 import { WhyUsComponent } from '../../components/why-us/why-us.component';
 import { ButtonDemo } from '../../components/ui/button/button.component';
+import { CustomerJourneyComponent } from '../../components/customer-journey/customer-journey.component';
 
 @Component({
   selector: 'app-landing-layout',
@@ -45,6 +46,7 @@ import { ButtonDemo } from '../../components/ui/button/button.component';
     HospitalsComponent,
     WhyUsComponent,
     ButtonDemo,
+    CustomerJourneyComponent,
   ],
 })
 export class LandingLayoutComponent implements OnInit {

@@ -1,3 +1,37 @@
-<p>
-  customer-journey works!
-</p>
+<section class="my-[80px]">
+  <div class="card">
+    <p-timeline
+      [value]="events"
+      align="alternate"
+      styleClass="customized-timeline"
+    >
+      <ng-template #marker let-event>
+        <span
+          class="z-10 flex h-8 w-8 items-center justify-center rounded-full text-white shadow-sm"
+          [style]="{ 'background-color': event.color }"
+        >
+          <i [class]="event.icon"></i>
+        </span>
+      </ng-template>
+      <ng-template #content let-event>
+        <!-- [subheader]="event.date" -->
+        <p-card [header]="event.status">
+          <img
+            *ngIf="event.image"
+            [src]="
+              'https://primefaces.org/cdn/primeng/images/demo/product/' +
+              event.image
+            "
+            [alt]="event.name"
+            width="200"
+            class="shadow"
+          />
+          <p>
+            {{ event.description }}
+          </p>
+          <p-button label="Schedule WhatsApp Call Now" [text]="true" />
+        </p-card>
+      </ng-template>
+    </p-timeline>
+  </div>
+</section>
