@@ -18,6 +18,7 @@ import { VideoConsultationComponent } from '../../components/video-consultation/
 import { CompactContactUsComponent } from '../../components/compact-contact-us/compact-contact-us.component';
 import { HospitalsComponent } from '../../components/hospitals/hospitals.component';
 import { WhyUsComponent } from '../../components/why-us/why-us.component';
+import { ButtonDemo } from '../../components/ui/button/button.component';
 
 @Component({
   selector: 'app-landing-layout',
@@ -43,6 +44,7 @@ import { WhyUsComponent } from '../../components/why-us/why-us.component';
     CompactContactUsComponent,
     HospitalsComponent,
     WhyUsComponent,
+    ButtonDemo,
   ],
 })
 export class LandingLayoutComponent implements OnInit {
