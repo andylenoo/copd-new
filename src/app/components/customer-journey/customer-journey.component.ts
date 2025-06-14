@@ -23,10 +23,10 @@ export class CustomerJourneyComponent {
   services = [
     {
       id: 1,
-      title: 'Free WhatsApp Medical Assessment',
+      title: 'Free Medical Assessment',
       description:
-        'Chat directly with a multilingual medical coordinator to discuss your symptoms, history, and goals — no commitment required.',
-      image: 'assets/images/photo-1576091160550-2173dba999ef.jpg',
+        'Fill out our quick form and a multilingual medical coordinator will contact you to discuss your symptoms, history, and treatment options — no commitment required.',
+      image: 'assets/images/customer-journey/medical-assesment.jpg',
       active: true,
     },
     {
@@ -34,42 +34,42 @@ export class CustomerJourneyComponent {
       title: 'Upload CT Scans & Pulmonary Tests',
       description:
         'Securely submit any recent medical imaging or lung function tests. If you don’t have these yet, we’ll guide you through how to get them locally.',
-      image: 'assets/images/medical-equipment.CCVd0Z7o.jpg',
+      image: 'assets/images/customer-journey/files.jpg',
     },
     {
       id: 3,
       title: 'Doctor Review + Treatment Plan Sent in 48h',
       description:
         'We will find the best hospital for you in the best country that suits you.',
-      image: 'assets/images/medical-team.C62XoM_c.jpg',
+      image: 'assets/images/customer-journey/review.jpg',
     },
     {
       id: 4,
       title: 'Pay 30% Deposit – Secure Reservation',
       description:
         'Lock in your treatment date and hospital slot with a 30% deposit. You’ll receive confirmation and pre-travel instructions immediately.',
-      image: 'assets/images/hospital-facade.BhF4unxP.jpg',
+      image: 'assets/images/customer-journey/booking.jpg',
     },
     {
       id: 5,
       title: 'Travel Assistance & Concierge Setup',
       description:
         'We arrange airport pickup, hotel booking, translation support, and hospital coordination. Just book your flight — we handle the rest.',
-      image: 'assets/images/hospital-facade.BhF4unxP.jpg',
+      image: 'assets/images/customer-journey/travel.jpg',
     },
     {
       id: 6,
       title: 'Surgery / Regenerative Protocols',
       description:
         'Receive patented, minimally invasive treatment in a world-class facility. All procedures are performed by certified COPD specialists.',
-      image: 'assets/images/hospital-facade.BhF4unxP.jpg',
+      image: 'assets/images/customer-journey/surgery.jpg',
     },
     {
       id: 7,
       title: '10-Day In-Country Recovery + 1-Year Follow-Up',
       description:
         'Recover under supervised care before returning home. Follow-up appointments (virtual or in-person) are included for 12 months.',
-      image: 'assets/images/hospital-facade.BhF4unxP.jpg',
+      image: 'assets/images/customer-journey/rest.jpg',
     },
   ];
 }
