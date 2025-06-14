@@ -19,12 +19,12 @@
     Customer Journey
   </h2>
 
-  <div class="relative mt-10 ml-6 space-y-16 border-gray-200 px-5 pb-[80px]">
-    <div
-      *ngFor="let service of services"
-      class="group relative flex items-start"
-    >
+  <div
+    class="relative mx-auto mt-10 max-w-[500px] space-y-16 p-20 pb-[80px] shadow-[0px_0px_27px_-1px_rgba(0,_0,_0,_0.1)]"
+  >
+    <div *ngFor="let service of services" class="group relative flex">
       <div
+        (click)="onClickStep(service.id)"
         class="absolute -left-8 flex h-10 w-10 items-center justify-center rounded-full border-2"
         [ngClass]="
           service.active
@@ -37,23 +37,32 @@
 
       <div
         *ngIf="service.id !== 7"
-        class="border-borderColor absolute top-13 -left-3.5 h-[170px] border-2"
+        [ngClass]="service.active ? 'h-[90px]' : 'h-[30px]'"
+        class="border-borderColor absolute top-14 -left-3.5 border-2"
       ></div>
 
-      <div
-        class="ml-4 grid flex-1 grid-cols-1 items-start gap-4 md:grid-cols-2"
-      >
+      <div class="ml-4 gap-4">
         <div class="">
-          <h3 class="text-lg font-semibold">{{ service.title }}</h3>
-          <p class="mt-2 text-sm text-gray-600">{{ service.description }}</p>
+          <h3 class="text-lg font-semibold whitespace-nowrap">
+            {{ service.title }}
+          </h3>
+          <p
+            [ngClass]="service.active ? 'flex' : 'hidden'"
+            class="mt-2 text-sm text-gray-600"
+          >
+            {{ service.description }}
+          </p>
         </div>
-        <div class="flex justify-center md:justify-end">
+        <!-- <div
+          [ngClass]="service.active ? 'flex' : 'hidden'"
+          class="justify-center md:justify-end"
+        >
           <img
             [src]="service.image"
             alt="{{ service.title }}"
             class="h-[180px] w-[250px]"
           />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
