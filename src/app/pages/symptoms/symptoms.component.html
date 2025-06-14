@@ -9,7 +9,7 @@
   [secondaryButtonText]="'Maybe Later'"
   [smallText]="'Offer expires in 24 hours • Terms apply'"
   [autoClose]="true"
-  [autoCloseDelay]="80000"
+  [autoCloseDelay]="8000"
   [showProgress]="true"
   (primaryAction)="handlePrimaryAction()"
   (secondaryAction)="handleSecondaryAction()"
@@ -21,7 +21,63 @@
     Common Symptoms
   </h2>
 
-  <section class="flex flex-wrap justify-center gap-5 px-5">
+  <div class="card flex justify-center">
+    <p-accordion [value]="['0']" [multiple]="true">
+      <p-accordion-panel value="0">
+        <p-accordion-header>1. Persistent cough with mucus </p-accordion-header>
+        <p-accordion-content>
+          <p class="mt-3">
+            A chronic cough that produces phlegm is often an early sign of COPD,
+            caused by airway inflammation and mucus buildup.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+      <p-accordion-panel value="1">
+        <p-accordion-header
+          >2. Shortness of breath, especially with activity</p-accordion-header
+        >
+        <p-accordion-content>
+          <p class="mt-3">
+            Difficulty breathing during physical exertion occurs as lung
+            function declines and airflow becomes restricted.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+      <p-accordion-panel value="2">
+        <p-accordion-header>3. Wheezing</p-accordion-header>
+        <p-accordion-content>
+          <p class="mt-3">
+            A high-pitched whistling sound while breathing, caused by narrowed
+            or obstructed airways due to inflammation.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+
+      <p-accordion-panel value="3">
+        <p-accordion-header>4. Chest tightness</p-accordion-header>
+        <p-accordion-content>
+          <p class="mt-3">
+            A feeling of pressure or heaviness in the chest, often resulting
+            from trapped air and reduced airflow in the lungs.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+
+      <p-accordion-panel value="4">
+        <p-accordion-header
+          >5. Frequent respiratory infections</p-accordion-header
+        >
+        <p-accordion-content>
+          <p class="mt-3">
+            People with COPD are more prone to infections like bronchitis or
+            pneumonia, which worsen symptoms and lung damage.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+    </p-accordion>
+  </div>
+
+  <!-- <section class="flex flex-wrap justify-center gap-5 px-5">
     <div
       class="border-borderColor mb-8 flex max-w-full min-w-[300px] flex-1 flex-col items-center rounded-2xl border-1 p-5"
     >
@@ -102,9 +158,9 @@
         pneumonia, which worsen symptoms and lung damage.
       </p>
     </div>
-  </section>
+  </section> -->
 
-  <p class="mb-[80px]">
+  <p class="my-5">
     For the possible clinical and subsequent laboratory diagnosis of Chronic
     Obstructive Pulmonary Disease (COPD) and determination of its severity;
     healthcare providers typically use a combination of tools and criteria.
@@ -447,10 +503,6 @@
   </h2>
 
   <div class="mx-auto flex max-w-[950px] flex-col">
-    <p class="mb-5 text-center text-gray-700">
-      If you are experiencing one or more of the symptoms below, you should take
-      urgent action and have the necessary examinations.
-    </p>
     <p class="text-center text-gray-700">
       Early diagnosis of COPD is crucial because it slows disease progression,
       improves quality of life, reduces flare-ups, supports smoking cessation,
@@ -458,7 +510,57 @@
     </p>
   </div>
 
-  <section class="mt-[80px] flex flex-wrap justify-center gap-5">
+  <div class="card mt-10 flex justify-center">
+    <p-accordion [value]="['0']" [multiple]="true">
+      <p-accordion-panel value="0">
+        <p-accordion-header
+          >1. Sudden chest pain or shortness of breath</p-accordion-header
+        >
+        <p-accordion-content>
+          <p class="mt-3">
+            May indicate a pneumothorax (collapsed lung), which requires
+            immediate medical attention to prevent further respiratory distress.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+      <p-accordion-panel value="1">
+        <p-accordion-header>2. Fever or increased cough</p-accordion-header>
+        <p-accordion-content>
+          <p class="mt-3">
+            Could be a sign of a respiratory infection such as pneumonia or
+            bronchitis, especially concerning if symptoms worsen rapidly.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+      <p-accordion-panel value="2">
+        <p-accordion-header
+          >3. Increased mucus or blood in sputum</p-accordion-header
+        >
+        <p-accordion-content>
+          <p class="mt-3">
+            May suggest an infection, inflammation, or bleeding in the lungs or
+            airways, and should be evaluated promptly.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+
+      <p-accordion-panel value="3">
+        <p-accordion-header>4. Drop in oxygen levels</p-accordion-header>
+        <p-accordion-content>
+          <p class="mt-3">
+            Indicates impaired lung function or oxygen exchange, potentially
+            leading to hypoxia; urgent assessment and intervention are needed.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+    </p-accordion>
+  </div>
+
+  <p class="mt-5 text-center text-gray-700">
+    If you are experiencing one or more of the symptoms above, you should take
+    urgent action and have the necessary examinations.
+  </p>
+  <!-- <section class="mt-[80px] flex flex-wrap justify-center gap-5">
     <div
       class="group relative mb-8 flex max-w-full min-w-[300px] flex-1 flex-col items-center"
     >
@@ -558,5 +660,5 @@
         </p>
       </div>
     </div>
-  </section>
+  </section> -->
 </div>

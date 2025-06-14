@@ -4,6 +4,7 @@ import { Cta2Component } from '../../components/cta/cta.component';
 import { CompactContactUsComponent } from '../../components/compact-contact-us/compact-contact-us.component';
 import { CtaPopupComponent } from '../../components/popup/cta-popup/cta-popup.component';
 import { CommonModule } from '@angular/common';
+import { AccordionModule } from 'primeng/accordion';
 
 @Component({
   selector: 'app-symptoms-page',
@@ -14,6 +15,7 @@ import { CommonModule } from '@angular/common';
     CompactContactUsComponent,
     CtaPopupComponent,
     CommonModule,
+    AccordionModule,
   ],
 })
 export class SymptomsPageComponent implements OnInit {
