@@ -35,7 +35,119 @@
     the risk of complications.
   </p>
 
-  <div class="grid grid-cols-1 gap-4 bg-gray-50 p-4 md:grid-cols-2">
+  <div class="card flex justify-center">
+    <p-accordion [value]="['0']" [multiple]="true">
+      <p-accordion-panel value="0">
+        <p-accordion-header
+          >1. Lifestyle and Non-Pharmacologic Management</p-accordion-header
+        >
+        <p-accordion-content>
+          <p class="mt-3">Smoking Cessation (most critical)</p>
+          <ul
+            class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+          >
+            <li>The only intervention proven to slow disease progression</li>
+            <li>
+              Offer nicotine replacement therapy, counseling, or medications
+              like varenicline or bupropion
+            </li>
+
+            <p class="mt-3">Pulmonary Rehabilitation</p>
+
+            <ul
+              class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+            >
+              <li>Exercise training, nutrition advice, and education</li>
+              <li>Especially helpful in moderate to severe COPD</li>
+            </ul>
+          </ul>
+        </p-accordion-content>
+      </p-accordion-panel>
+      <p-accordion-panel value="1">
+        <p-accordion-header>2. Pharmacologic Treatment</p-accordion-header>
+        <p-accordion-content>
+          <ul
+            class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+          >
+            <li>SABA (Short-Acting Beta Agonist): albuterol</li>
+            <li>SAMA (Short-Acting Muscarinic Antagonist): ipratropium</li>
+            <li>LABA (Long-Acting Beta Agonist): salmeterol, formoterol</li>
+            <li>
+              LAMA (Long-Acting Muscarinic Antagonist): tiotropium, umeclidinium
+            </li>
+            <li>
+              ICS (Inhaled Corticosteroids): fluticasone, budesonide (used in
+              select patients)
+            </li>
+          </ul>
+
+          <p class="mt-[10px]">Triple Therapy (LABA + LAMA + ICS)</p>
+
+          <ul
+            class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+          >
+            <li>For severe COPD with frequent exacerbations</li>
+          </ul>
+        </p-accordion-content>
+      </p-accordion-panel>
+      <p-accordion-panel value="2">
+        <p-accordion-header>3. Supportive Treatment</p-accordion-header>
+        <p-accordion-content>
+          <ul
+            class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+          >
+            <li>Oxygen therapy if PaO₂ ≤ 55 mmHg or O₂ sat ≤ 88%</li>
+            <li>
+              Noninvasive ventilation (BiPAP) in hypercapnic respiratory failure
+            </li>
+          </ul>
+        </p-accordion-content>
+      </p-accordion-panel>
+
+      <p-accordion-panel value="3">
+        <p-accordion-header>4. Vaccinations</p-accordion-header>
+        <p-accordion-content>
+          <ul
+            class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+          >
+            <li>Influenza (yearly)</li>
+            <li>Pneumococcal vaccines (PCV20 or PCV15 + PPSV23)</li>
+            <li>COVID-19</li>
+            <li>Tdap (for pertussis protection)</li>
+          </ul>
+        </p-accordion-content>
+      </p-accordion-panel>
+
+      <p-accordion-panel value="4">
+        <p-accordion-header>5. Management of Exacerbations</p-accordion-header>
+        <p-accordion-content>
+          <ul
+            class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+          >
+            <li>Increased bronchodilators</li>
+            <li>Oral corticosteroids</li>
+            <li>Short-term antibiotics</li>
+            <li>Hospitalization if severe</li>
+          </ul>
+        </p-accordion-content>
+      </p-accordion-panel>
+
+      <p-accordion-panel value="5">
+        <p-accordion-header>6. Surgical Options</p-accordion-header>
+        <p-accordion-content>
+          <ul
+            class="mt-3 flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
+          >
+            <li>Lung volume reduction surgery</li>
+            <li>Bullectomy</li>
+            <li>Lung transplant (in severe cases)</li>
+          </ul>
+        </p-accordion-content>
+      </p-accordion-panel>
+    </p-accordion>
+  </div>
+
+  <!-- <div class="grid grid-cols-1 gap-4 bg-gray-50 p-4 md:grid-cols-2">
     <div class="flex items-start gap-4 rounded-xl bg-white p-6 shadow-sm">
       <div class="rounded-md bg-green-50 p-2">
         <svg
@@ -84,13 +196,13 @@
 
       <div class="text-gray-400">
         <svg
-          class="h-5 w-5"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#01395A"
         >
-          <path d="M17 7l-10 10M7 7h10v10" />
+          <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
         </svg>
       </div>
     </div>
@@ -145,13 +257,13 @@
       </div>
       <div class="text-gray-400">
         <svg
-          class="h-5 w-5"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#01395A"
         >
-          <path d="M17 7l-10 10M7 7h10v10" />
+          <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
         </svg>
       </div>
     </div>
@@ -191,13 +303,13 @@
       </div>
       <div class="text-gray-400">
         <svg
-          class="h-5 w-5"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#01395A"
         >
-          <path d="M17 7l-10 10M7 7h10v10" />
+          <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
         </svg>
       </div>
     </div>
@@ -236,13 +348,13 @@
       </div>
       <div class="text-gray-400">
         <svg
-          class="h-5 w-5"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#01395A"
         >
-          <path d="M17 7l-10 10M7 7h10v10" />
+          <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
         </svg>
       </div>
     </div>
@@ -282,13 +394,13 @@
       </div>
       <div class="text-gray-400">
         <svg
-          class="h-5 w-5"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#01395A"
         >
-          <path d="M17 7l-10 10M7 7h10v10" />
+          <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
         </svg>
       </div>
     </div>
@@ -328,13 +440,13 @@
       </div>
       <div class="text-gray-400">
         <svg
-          class="h-5 w-5"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#01395A"
         >
-          <path d="M17 7l-10 10M7 7h10v10" />
+          <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
         </svg>
       </div>
     </div>
@@ -371,13 +483,13 @@
       </div>
       <div class="text-gray-400">
         <svg
-          class="h-5 w-5"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#01395A"
         >
-          <path d="M17 7l-10 10M7 7h10v10" />
+          <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
         </svg>
       </div>
     </div>
@@ -412,13 +524,13 @@
       </div>
       <div class="text-gray-400">
         <svg
-          class="h-5 w-5"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#01395A"
         >
-          <path d="M17 7l-10 10M7 7h10v10" />
+          <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
         </svg>
       </div>
     </div>
@@ -443,14 +555,6 @@
         <h3 class="text-brandColorPrimary text-lg font-semibold">
           Advanced Therapy(Severe COPD)
         </h3>
-        <!-- <p class="mb-3 text-gray-600">
-          COPD balloon treatment, also known as "desquamation" or "Broncho Muco
-          Cleaner," is an innovative bronchoscopic procedure primarily used in
-          Turkey for patients with chronic bronchitis, a component of COPD,
-          characterized by airway narrowing and thickening of goblet cells due
-          to tobacco exposure.
-        </p> -->
-        <!-- <strong>Target</strong> -->
         <ul
           class="flex list-inside list-disc flex-col gap-2 text-sm text-gray-600"
         >
@@ -521,58 +625,6 @@
           <li>Medication adjustment: As lung mechanics change</li>
         </ul>
 
-        <!-- <strong>Procedure</strong>
-        <ul class="list-inside list-disc text-sm text-gray-600">
-          <li>
-            A bronchoscope is inserted through an intubation tube into the
-            patient's airways.
-          </li>
-          <li>
-            COPD balloons, chosen to match the diameter of the bronchi, are
-            advanced through the bronchoscope.
-          </li>
-          <li>
-            These balloons, made of polyisoprene and covered with a
-            thermoplastic polystyrene weave (or a latex-free mesh), are inflated
-            and deflated with adjustable pressure and frequency using an
-            electronic pump.
-          </li>
-          <li>
-            The scraping action of the balloon on the thickened inner layer of
-            the bronchi is intended to restore it to its original thickness.
-            This process, termed "desquamation," aims to transform the thickened
-            goblet cell layer into a foamy liquid.
-          </li>
-          <li class="mb-3">
-            The foamy liquid, containing the removed goblet cells, is then
-            aspirated through the bronchoscope channel and expelled.
-          </li>
-        </ul>
-        <strong>Goal</strong>
-        <ul class="list-inside list-disc text-sm text-gray-600">
-          <li class="mb-3">
-            The primary objective is to relieve chronic bronchitis caused by
-            smoking and restore the altered bronchial epithelium layer, thereby
-            improving airway width and reducing mucus production.
-          </li>
-        </ul>
-
-        <strong>Key Features</strong>
-        <ul class="list-inside list-disc text-sm text-gray-600">
-          <li>
-            Mechanical Solution: It's presented as a mechanical solution without
-            the placement of foreign bodies in the airway.
-          </li>
-          <li>
-            Painless and Non-invasive: Claims are made that the procedure is
-            painless, non-invasive, and allows for an immediate return to daily
-            life.
-          </li>
-          <li class="mb-3">
-            Availability: Currently, this specific "COPD balloon treatment" or
-            "Broncho Muco Cleaner" appears to be primarily available in Turkey.
-          </li>
-        </ul> -->
         <button
           [routerLink]="['/contact-us']"
           class="mt-8 self-center rounded-md bg-[#01578a] px-6 py-3 text-xs font-semibold text-white shadow-lg transition-all duration-300 hover:scale-102 hover:bg-[#0270b4]"
@@ -583,17 +635,17 @@
 
       <div class="text-gray-400">
         <svg
-          class="h-5 w-5"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#01395A"
         >
-          <path d="M17 7l-10 10M7 7h10v10" />
+          <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
         </svg>
       </div>
     </div>
-  </div>
+  </div> -->
 </section>
 
 <div

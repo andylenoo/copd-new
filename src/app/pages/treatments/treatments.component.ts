@@ -2,15 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { CtaPopupComponent } from '../../components/popup/cta-popup/cta-popup.component';
+import { AccordionModule } from 'primeng/accordion';
 
 @Component({
   selector: 'app-treatments-page',
   templateUrl: './treatments.component.html',
   styleUrls: ['./treatments.component.css'],
-  imports: [RouterModule, CtaPopupComponent, CommonModule],
+  imports: [RouterModule, CtaPopupComponent, CommonModule, AccordionModule],
 })
 export class TreatmentsPageComponent implements OnInit {
-  constructor() {}
+  tabs: { title: string; value: number; content: string }[] = [];
 
   ngOnInit() {
     setTimeout(() => {
