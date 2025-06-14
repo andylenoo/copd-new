@@ -14,34 +14,37 @@
   </ng-template>
 </p-timeline> -->
 
-<section class="pt-16">
+<section class="mb-16 pt-16">
   <h2 class="text-brandColorPrimary mb-4 text-center text-3xl font-semibold">
     Customer Journey
   </h2>
 
   <div
-    class="relative mx-auto mt-10 max-w-[500px] space-y-16 p-20 pb-[80px] shadow-[0px_0px_27px_-1px_rgba(0,_0,_0,_0.1)]"
+    class="relative mx-auto mt-10 max-w-[540px] cursor-pointer space-y-16 p-20 shadow-[0px_0px_27px_-1px_rgba(0,_0,_0,_0.1)]"
   >
-    <div *ngFor="let service of services" class="group relative flex">
+    <div
+      (click)="onClickStep(service.id)"
+      *ngFor="let service of services"
+      class="group relative flex"
+    >
       <div
-        (click)="onClickStep(service.id)"
-        class="absolute -left-8 flex h-10 w-10 items-center justify-center rounded-full border-2"
+        class="absolute -left-8 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2"
         [ngClass]="
           service.active
             ? 'bg-brandColorPrimary border-brandColorPrimary text-white'
             : 'border-gray-300 text-gray-600'
         "
       >
-        <span class="font-semibold">{{ service.id }}</span>
+        <span class="cursor-pointer font-semibold">{{ service.id }}</span>
       </div>
 
       <div
         *ngIf="service.id !== 7"
-        [ngClass]="service.active ? 'h-[90px]' : 'h-[30px]'"
+        [ngClass]="service.active ? 'h-[80px]' : 'h-[30px]'"
         class="border-borderColor absolute top-14 -left-3.5 border-2"
       ></div>
 
-      <div class="ml-4 gap-4">
+      <div class="ml-4 cursor-pointer gap-4">
         <div class="">
           <h3 class="text-lg font-semibold whitespace-nowrap">
             {{ service.title }}
