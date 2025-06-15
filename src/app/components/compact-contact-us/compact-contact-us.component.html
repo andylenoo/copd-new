@@ -11,31 +11,34 @@
       </p>
     </div>
     <form
-      action="#"
-      method="POST"
+      [formGroup]="form"
+      (ngSubmit)="submit()"
+      novalidate
       class="mx-auto mt-8 grid max-w-3xl gap-4 sm:grid-cols-2"
     >
       <input
         type="text"
-        name="first-name"
-        id="first-name"
+        name="name"
+        id="name"
+        formControlName="name"
         autocomplete="given-name"
-        placeholder="First name"
-        class="focus:outline-brandColorPrimary col-span-1 rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400"
+        placeholder="Full name"
+        class="focus:outline-brandColorPrimary rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 lg:col-span-2"
       />
       <input
         type="text"
-        name="last-name"
-        id="last-name"
-        autocomplete="family-name"
-        placeholder="Last name"
-        class="focus:outline-brandColorPrimary col-span-1 rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400"
-      />
-      <input
-        type="text"
-        name="phone-number"
-        id="phone-number"
+        name="phone"
+        formControlName="phone"
+        id="phone"
         placeholder="+1 123-456-7890"
+        class="focus:outline-brandColorPrimary rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 lg:col-span-2"
+      />
+      <input
+        type="text"
+        name="email"
+        id="email"
+        formControlName="email"
+        placeholder="Email"
         class="focus:outline-brandColorPrimary rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 lg:col-span-2"
       />
       <textarea
@@ -46,8 +49,9 @@
         class="focus:outline-brandColorPrimary rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 lg:col-span-2"
       ></textarea>
       <button
+        [disabled]="form.invalid"
         type="submit"
-        class="bg-brandColorPrimary focus:outline-brandColorPrimary hover:bg-brandColorPrimaryHover mt-2 w-full rounded-md px-4 py-2 text-sm font-semibold text-white lg:col-span-2"
+        class="bg-brandColorPrimary focus:outline-brandColorPrimary hover:bg-brandColorPrimaryHover mt-2 w-full rounded-md px-4 py-2 text-sm font-semibold text-white disabled:opacity-50 lg:col-span-2"
       >
         Let's talk
       </button>

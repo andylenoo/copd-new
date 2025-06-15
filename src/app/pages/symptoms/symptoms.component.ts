@@ -76,6 +76,7 @@ export class SymptomsPageComponent implements OnInit {
       formData.append(key, value as string);
     });
 
+    // Add FormSubmit-specific fields
     formData.append('_captcha', 'false');
     formData.append('_template', 'table');
 
