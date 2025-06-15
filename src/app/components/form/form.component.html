@@ -1,194 +1,439 @@
 <section class="bg-gradient-to-b from-white to-[#01395A] px-4 py-16">
-  <div class="mx-auto max-w-3xl space-y-10 rounded-xl bg-white p-8 shadow-lg">
-    <div class="text-center">
-      <h2 class="text-brandColorPrimary smtext-4xl text-3xl font-bold">
+  <div
+    *ngIf="!formSubmitted"
+    class="mx-auto max-w-3xl space-y-12 rounded-3xl bg-white p-10 shadow-2xl"
+  >
+    <!-- Header -->
+    <div class="space-y-4 text-center">
+      <h2 class="text-brandColorPrimary text-3xl font-bold sm:text-4xl">
         Start Your 30-Day COPD Recovery Program
       </h2>
-      <p class="mt-4 text-lg text-gray-600">
+      <p class="text-gray-600">
         Take this quick 2-minute assessment to discover your COPD severity level
-        and get matched with your ideal treatment + travel plan.
-      </p>
-      <p class="mt-2 text-lg text-gray-600">
-        At the end, unlock a personalized plan + concierge help for your 30-day
-        COPD wellness journey.
+        and unlock a personalized treatment + travel plan with expert guidance.
       </p>
     </div>
 
-    <div class="flex flex-col items-center">
+    <!-- Benefits -->
+    <div class="text-center">
       <h3 class="text-brandColorPrimary mb-4 text-2xl font-semibold">
         Your Recovery, Fully Planned
       </h3>
-      <ul class="list-disc space-y-1 pl-6 text-gray-700">
-        <li>Best COPD clinics & hospitals</li>
-        <li>AI-powered diagnostic tools</li>
-        <li>Travel, hotel, and local transfers</li>
-        <li>1-on-1 call with a medical concierge</li>
+      <ul class="space-y-2 text-gray-700">
+        <li>• Top COPD clinics & hospitals</li>
+        <li>• AI-powered diagnostics</li>
+        <li>• Travel, hotels & local transfers</li>
+        <li>• 1-on-1 medical concierge support</li>
       </ul>
     </div>
-    <div
-      class="my-8 h-1 w-full rounded-full bg-gradient-to-r from-transparent via-gray-300 to-transparent"
-    ></div>
 
-    <!-- Step 1 -->
-    <div class="flex flex-col items-center">
-      <h3 class="text-brandColorPrimary mb-4 text-2xl font-semibold">
-        Step 1: How are you feeling today?
-      </h3>
-      <strong class="mb-5 text-gray-700">
-        Choose the statement that best matches how you feel daily
-      </strong>
-      <div class="space-y-2">
-        <label class="block">
-          <input type="radio" name="breath_level" class="mr-2" /> I only feel
-          breathless during intense workouts
-        </label>
-        <label class="block">
-          <input type="radio" name="breath_level" class="mr-2" /> I get winded
-          walking fast or uphill
-        </label>
-        <label class="block">
-          <input type="radio" name="breath_level" class="mr-2" /> I walk slower
-          than my peers or stop to catch my breath
-        </label>
-        <label class="block">
-          <input type="radio" name="breath_level" class="mr-2" /> I stop for
-          breath every 100 meters or after a few minutes
-        </label>
-        <label class="block">
-          <input type="radio" name="breath_level" class="mr-2" /> I’m too
-          breathless to leave the house or dress easily
-        </label>
-      </div>
-    </div>
-    <div
-      class="my-8 h-1 w-full rounded-full bg-gradient-to-r from-transparent via-gray-300 to-transparent"
-    ></div>
+    <hr class="border-t border-gray-200" />
 
-    <!-- Step 2 -->
-    <div class="flex flex-col items-center">
-      <h3 class="text-brandColorPrimary mb-4 text-2xl font-semibold">
-        Step 2: Rate a few daily symptoms
-      </h3>
-      <strong class="mb-5 text-gray-700">
-        Slide to rate from 0 (no problem) to 5 (severe problem)
-      </strong>
-      <div class="space-y-4">
-        <label class="block">
-          Coughing frequency
-          <input type="range" min="0" max="5" class="mt-1 w-full" />
-        </label>
-        <label class="block">
-          Amount of phlegm
-          <input type="range" min="0" max="5" class="mt-1 w-full" />
-        </label>
-        <label class="block">
-          Breathlessness
-          <input type="range" min="0" max="5" class="mt-1 w-full" />
-        </label>
-        <label class="block">
-          Sleep quality
-          <input type="range" min="0" max="5" class="mt-1 w-full" />
-        </label>
-        <label class="block">
-          Energy levels
-          <input type="range" min="0" max="5" class="mt-1 w-full" />
-        </label>
-      </div>
-    </div>
-    <div
-      class="my-8 h-1 w-full rounded-full bg-gradient-to-r from-transparent via-gray-300 to-transparent"
-    ></div>
-
-    <!-- Step 3 -->
-    <div class="flex flex-col items-center">
-      <h3 class="text-brandColorPrimary mb-4 text-2xl font-semibold">
-        Step 3: In the last 12 months…
-      </h3>
-      <strong class="mb-5 text-gray-700">
-        How many COPD flare-ups have you had (needing steroids, ER, or
-        hospital)?
-      </strong>
-      <div class="space-y-2">
-        <label class="block">
-          <input type="radio" name="flare_count" class="mr-2" /> None
-        </label>
-        <label class="block">
-          <input type="radio" name="flare_count" class="mr-2" /> 1 (not
-          hospitalized)
-        </label>
-        <label class="block">
-          <input type="radio" name="flare_count" class="mr-2" /> 2 or more
-        </label>
-        <label class="block">
-          <input type="radio" name="flare_count" class="mr-2" /> 1+ that led to
-          hospitalization
-        </label>
-      </div>
-    </div>
-    <div
-      class="my-8 h-1 w-full rounded-full bg-gradient-to-r from-transparent via-gray-300 to-transparent"
-    ></div>
-
-    <!-- Step 4 -->
-    <div class="flex flex-col items-center">
-      <h3 class="text-brandColorPrimary mb-4 text-2xl font-semibold">
-        Step 4: Have you done a spirometry test before?
-      </h3>
-      <div class="space-y-2">
-        <label class="block">
-          <input type="radio" name="spirometry" class="mr-2" /> Yes
-        </label>
-        <label class="block">
-          <input type="radio" name="spirometry" class="mr-2" /> No
-        </label>
-        <label class="block">
-          <input type="radio" name="spirometry" class="mr-2" /> Not sure
-        </label>
-      </div>
-    </div>
-    <div
-      class="my-8 h-1 w-full rounded-full bg-gradient-to-r from-transparent via-gray-300 to-transparent"
-    ></div>
-
-    <!-- Final Step Contact Info -->
-    <div class="flex flex-col items-center">
-      <h3 class="text-brandColorPrimary mb-4 text-2xl font-semibold">
-        You're Almost There!
-      </h3>
-      <p class="mb-4 text-gray-700">
-        Let us send your personalized COPD stage and recovery plan.
-      </p>
-      <form class="space-y-4">
-        <div>
-          <label class="block text-sm font-medium text-gray-700">Name</label>
-          <input
-            type="text"
-            class="mt-1 w-full rounded-md border border-gray-300 p-2"
-          />
+    <!-- Form starts here -->
+    <form
+      action="https://formsubmit.co/akinbilgin54@gmail.com"
+      method="POST"
+      [formGroup]="form"
+      (ngSubmit)="submit()"
+      class="space-y-12"
+      novalidate
+    >
+      <!-- Step 1 -->
+      <div>
+        <h3 class="text-brandColorPrimary mb-3 text-xl font-semibold">
+          Step 1: How are you feeling today?
+        </h3>
+        <p class="mb-4 text-gray-700">
+          Select the statement that best describes your usual breathing.
+        </p>
+        <div class="space-y-3">
+          <label class="flex items-center gap-2">
+            <input
+              type="radio"
+              formControlName="breath_level"
+              value="intense workouts"
+              class="accent-brandColorPrimary"
+            />
+            I only feel breathless during intense workouts
+          </label>
+          <label class="flex items-center gap-2">
+            <input
+              type="radio"
+              formControlName="breath_level"
+              value="walking fast or uphill"
+              class="accent-brandColorPrimary"
+            />
+            I get winded walking fast or uphill
+          </label>
+          <label class="flex items-center gap-2">
+            <input
+              type="radio"
+              formControlName="breath_level"
+              value="slower than peers"
+              class="accent-brandColorPrimary"
+            />
+            I walk slower than my peers or stop to catch my breath
+          </label>
+          <label class="flex items-center gap-2">
+            <input
+              type="radio"
+              formControlName="breath_level"
+              value="stop every 100 meters"
+              class="accent-brandColorPrimary"
+            />
+            I stop for breath every 100 meters or after a few minutes
+          </label>
+          <label class="flex items-center gap-2">
+            <input
+              type="radio"
+              formControlName="breath_level"
+              value="too breathless to leave house"
+              class="accent-brandColorPrimary"
+            />
+            I'm too breathless to leave the house or dress easily
+          </label>
         </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-700">Email</label>
-          <input
-            type="email"
-            class="mt-1 w-full rounded-md border border-gray-300 p-2"
-          />
-        </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-700"
-            >Phone (SMS updates)</label
-          >
-          <input
-            type="tel"
-            class="mt-1 w-full rounded-md border border-gray-300 p-2"
-          />
-        </div>
-        <button
-          type="submit"
-          class="hoverbg-blue-700 bg-brandColorPrimary w-full rounded-md px-4 py-2 text-white"
+        <div
+          *ngIf="f['breath_level'].touched && f['breath_level'].invalid"
+          class="mt-2 text-sm text-red-600"
         >
-          Submit & Get My COPD Plan
-        </button>
-      </form>
-    </div>
+          Please select your breathing level
+        </div>
+      </div>
+
+      <hr class="border-t border-gray-200" />
+
+      <!-- Step 2 -->
+      <div>
+        <h3 class="text-brandColorPrimary mb-3 text-xl font-semibold">
+          Step 2: Rate your daily symptoms
+        </h3>
+        <p class="mb-4 text-gray-700">0 = None, 5 = Severe</p>
+        <div class="space-y-6">
+          <div>
+            <label class="block">
+              Coughing frequency
+              <input
+                type="range"
+                min="0"
+                max="5"
+                formControlName="coughing_frequency"
+                class="accent-brandColorPrimary w-full"
+              />
+              <div class="flex justify-between text-xs text-gray-500">
+                <span>0</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+              </div>
+            </label>
+          </div>
+
+          <div>
+            <label class="block">
+              Amount of phlegm
+              <input
+                type="range"
+                min="0"
+                max="5"
+                formControlName="phlegm_amount"
+                class="accent-brandColorPrimary w-full"
+              />
+              <div class="flex justify-between text-xs text-gray-500">
+                <span>0</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+              </div>
+            </label>
+          </div>
+
+          <div>
+            <label class="block">
+              Breathlessness
+              <input
+                type="range"
+                min="0"
+                max="5"
+                formControlName="breathlessness"
+                class="accent-brandColorPrimary w-full"
+              />
+              <div class="flex justify-between text-xs text-gray-500">
+                <span>0</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+              </div>
+            </label>
+          </div>
+
+          <div>
+            <label class="block">
+              Sleep quality
+              <input
+                type="range"
+                min="0"
+                max="5"
+                formControlName="sleep_quality"
+                class="accent-brandColorPrimary w-full"
+              />
+              <div class="flex justify-between text-xs text-gray-500">
+                <span>0</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+              </div>
+            </label>
+          </div>
+
+          <div>
+            <label class="block">
+              Energy levels
+              <input
+                type="range"
+                min="0"
+                max="5"
+                formControlName="energy_levels"
+                class="accent-brandColorPrimary w-full"
+              />
+              <div class="flex justify-between text-xs text-gray-500">
+                <span>0</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-t border-gray-200" />
+
+      <!-- Step 3 -->
+      <div>
+        <h3 class="text-brandColorPrimary mb-3 text-xl font-semibold">
+          Step 3: Flare-up history (last 12 months)
+        </h3>
+        <p class="mb-4 text-gray-700">
+          How many COPD flare-ups required steroids or hospital visits?
+        </p>
+        <div class="space-y-3">
+          <label class="flex items-center gap-2">
+            <input
+              type="radio"
+              formControlName="flare_count"
+              value="none"
+              class="accent-brandColorPrimary"
+            />
+            None
+          </label>
+          <label class="flex items-center gap-2">
+            <input
+              type="radio"
+              formControlName="flare_count"
+              value="1_not_hospitalized"
+              class="accent-brandColorPrimary"
+            />
+            1 (not hospitalized)
+          </label>
+          <label class="flex items-center gap-2">
+            <input
+              type="radio"
+              formControlName="flare_count"
+              value="2_or_more"
+              class="accent-brandColorPrimary"
+            />
+            2 or more
+          </label>
+          <label class="flex items-center gap-2">
+            <input
+              type="radio"
+              formControlName="flare_count"
+              value="1_hospitalized"
+              class="accent-brandColorPrimary"
+            />
+            1+ that led to hospitalization
+          </label>
+        </div>
+        <div
+          *ngIf="f['flare_count'].touched && f['flare_count'].invalid"
+          class="mt-2 text-sm text-red-600"
+        >
+          Please select your flare-up history
+        </div>
+      </div>
+
+      <hr class="border-t border-gray-200" />
+
+      <!-- Step 4 -->
+      <div>
+        <h3 class="text-brandColorPrimary mb-3 text-xl font-semibold">
+          Step 4: Spirometry Test
+        </h3>
+        <p class="mb-4 text-gray-700">
+          Have you done a spirometry lung test before?
+        </p>
+        <div class="space-y-3">
+          <label class="flex items-center gap-2">
+            <input
+              type="radio"
+              formControlName="spirometry"
+              value="yes"
+              class="accent-brandColorPrimary"
+            />
+            Yes
+          </label>
+          <label class="flex items-center gap-2">
+            <input
+              type="radio"
+              formControlName="spirometry"
+              value="no"
+              class="accent-brandColorPrimary"
+            />
+            No
+          </label>
+          <label class="flex items-center gap-2">
+            <input
+              type="radio"
+              formControlName="spirometry"
+              value="not_sure"
+              class="accent-brandColorPrimary"
+            />
+            Not sure
+          </label>
+        </div>
+        <div
+          *ngIf="f['spirometry'].touched && f['spirometry'].invalid"
+          class="mt-2 text-sm text-red-600"
+        >
+          Please select your spirometry test status
+        </div>
+      </div>
+
+      <hr class="border-t border-gray-200" />
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-brandColorPrimary mb-3 text-xl font-semibold">
+          You're Almost Done!
+        </h3>
+        <p class="mb-4 text-gray-700">
+          Enter your details to receive your custom recovery plan.
+        </p>
+        <div class="space-y-5">
+          <div>
+            <label class="mb-1 block text-sm text-gray-700">Full Name*</label>
+            <input
+              type="text"
+              placeholder="Full Name"
+              formControlName="name"
+              [class.border-red-500]="f['name'].touched && f['name'].invalid"
+              class="focus:ring-brandColorPrimary w-full rounded-md border border-gray-300 p-3 placeholder-gray-400 focus:ring-2 focus:outline-none"
+            />
+            <div
+              *ngIf="f['name'].touched && f['name'].invalid"
+              class="mt-1 text-sm text-red-600"
+            >
+              <div *ngIf="f['name'].errors?.['required']">Name is required</div>
+              <div *ngIf="f['name'].errors?.['minlength']">
+                Name must be at least 2 characters
+              </div>
+            </div>
+          </div>
+          <div>
+            <label class="mb-1 block text-sm text-gray-700">Email*</label>
+            <input
+              type="email"
+              formControlName="email"
+              placeholder="Email"
+              [class.border-red-500]="f['email'].touched && f['email'].invalid"
+              class="focus:ring-brandColorPrimary w-full rounded-md border border-gray-300 p-3 placeholder-gray-400 focus:ring-2 focus:outline-none"
+            />
+            <div
+              *ngIf="f['email'].touched && f['email'].invalid"
+              class="mt-1 text-sm text-red-600"
+            >
+              <div *ngIf="f['email'].errors?.['required']">
+                Email is required
+              </div>
+              <div *ngIf="f['email'].errors?.['email']">
+                Please enter a valid email address
+              </div>
+            </div>
+          </div>
+          <div>
+            <label class="mb-1 block text-sm text-gray-700">
+              Phone (SMS updates)*
+            </label>
+            <input
+              type="number"
+              formControlName="phone"
+              placeholder="+1 123-456-7890"
+              class="focus:ring-brandColorPrimary w-full [appearance:textfield] rounded-md border border-gray-300 p-3 placeholder-gray-400 focus:ring-2 focus:outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+              pattern="[0-9]*"
+              inputmode="numeric"
+            />
+            <div
+              *ngIf="f['phone'].touched && f['phone'].invalid"
+              class="mt-1 text-sm text-red-600"
+            >
+              <div *ngIf="f['phone'].errors?.['required']">
+                Phone number is required
+              </div>
+              <div *ngIf="f['phone'].errors?.['pattern']">
+                Please enter a valid phone number
+              </div>
+
+              <div *ngIf="f['phone'].errors?.['minlength']">
+                Phone number should be at least 7 characters
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        type="submit"
+        class="bg-brandColorPrimary hover:bg-opacity-90 w-full rounded-full px-6 py-3 font-semibold text-white transition disabled:opacity-50"
+        [disabled]="form.invalid"
+      >
+        Submit & Get My COPD Plan
+      </button>
+    </form>
+  </div>
+
+  <div
+    *ngIf="formSubmitted"
+    class="mx-auto max-w-3xl rounded-xl border border-green-400 bg-green-100 p-6 text-center text-green-800 shadow-lg"
+    role="alert"
+  >
+    <svg
+      class="mx-auto mb-3 h-12 w-12 text-green-600"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+    <p class="text-lg font-semibold">
+      Thank you! Your form has been successfully submitted.
+    </p>
+    <p class="mt-2">
+      Our doctors will review it and get back to you via WhatsApp or Email
+      shortly.
+    </p>
   </div>
 </section>
