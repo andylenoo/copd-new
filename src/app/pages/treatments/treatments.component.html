@@ -661,40 +661,49 @@
     <h2 class="text-brandColorPrimary text-4xl leading-[50px] font-bold">
       Schedule a Free Consultation Now
     </h2>
-    <form action="#" method="POST" class="mt-6 grid gap-3">
+    <form
+      [formGroup]="form"
+      (ngSubmit)="submit()"
+      novalidate
+      class="mt-6 grid gap-3"
+    >
       <input
         type="text"
-        name="first-name"
-        id="first-name"
+        name="name"
+        id="name"
+        formControlName="name"
         autocomplete="given-name"
-        placeholder="First name"
-        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-600"
+        placeholder="Full name"
+        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-black placeholder-gray-500"
       />
       <input
         type="text"
-        name="last-name"
-        id="last-name"
-        autocomplete="family-name"
-        placeholder="Last name"
-        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-600"
-      />
-      <input
-        type="text"
-        name="phone-number"
-        id="phone-number"
+        name="phone"
+        id="phone"
+        formControlName="phone"
         placeholder="+1 123-456-7890"
-        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-600"
+        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-black placeholder-gray-500"
+      />
+      <input
+        type="text"
+        name="email"
+        id="email"
+        formControlName="email"
+        placeholder="Email"
+        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-black placeholder-gray-500"
       />
       <textarea
         name="message"
         id="message"
+        formControlName="message"
         rows="3"
         placeholder="Please state when and how you want to be contacted"
-        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-gray-300 placeholder-gray-600"
+        class="border-borderColor bg-borderColor rounded-md border px-3 py-2 text-sm text-black placeholder-gray-500"
       ></textarea>
       <button
         type="submit"
-        class="bg-brandColorPrimaryHover mt-2 w-full rounded-md px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-104"
+        class="bg-brandColorPrimary hover:bg-opacity-90 w-full rounded-full px-6 py-3 font-semibold text-white transition disabled:opacity-50"
+        [disabled]="form.invalid"
       >
         Let's talk
       </button>

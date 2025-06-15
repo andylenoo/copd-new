@@ -3,13 +3,24 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { CtaPopupComponent } from '../../components/popup/cta-popup/cta-popup.component';
 import { AccordionModule } from 'primeng/accordion';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-treatments-page',
   templateUrl: './treatments.component.html',
   styleUrls: ['./treatments.component.css'],
-  imports: [RouterModule, CtaPopupComponent, CommonModule, AccordionModule],
+  imports: [
+    RouterModule,
+    CtaPopupComponent,
+    CommonModule,
+    AccordionModule,
+    ReactiveFormsModule,
+  ],
 })
 export class TreatmentsPageComponent implements OnInit {
   tabs: { title: string; value: number; content: string }[] = [];
@@ -44,6 +55,7 @@ export class TreatmentsPageComponent implements OnInit {
         '',
         [Validators.pattern(/^[0-9\+\-\s]+$/), Validators.minLength(7)],
       ],
+      message: ['', [Validators.required]],
     });
   }
 
@@ -80,8 +92,9 @@ export class TreatmentsPageComponent implements OnInit {
         return response.json();
       })
       .then((data) => {
-        console.log('Success:', data);
+        alert('Form submitted we will contact you as soon as possible!');
         this.formSubmitted = true;
+        this.form.reset();
       })
       .catch((error) => {
         console.error('Error:', error);

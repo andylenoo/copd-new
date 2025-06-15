@@ -56,6 +56,7 @@ export class SymptomsPageComponent implements OnInit {
         '',
         [Validators.pattern(/^[0-9\+\-\s]+$/), Validators.minLength(7)],
       ],
+      message: ['', [Validators.required]],
     });
   }
 
@@ -92,8 +93,9 @@ export class SymptomsPageComponent implements OnInit {
         return response.json();
       })
       .then((data) => {
-        console.log('Success:', data);
+        alert('Form submitted we will contact you as soon as possible!');
         this.formSubmitted = true;
+        this.form.reset();
       })
       .catch((error) => {
         console.error('Error:', error);
