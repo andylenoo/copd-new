@@ -100,9 +100,11 @@
           <div [class]="destination.customClass"></div>
           <div class="absolute inset-0 flex items-center justify-center">
             <div
-              class="transform rounded-full border border-white/30 bg-white/20 px-8 py-4 backdrop-blur-sm transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30"
+              class="transform rounded-full border border-white/30 bg-white/20 px-4 py-2 backdrop-blur-sm transition-all duration-300 group-hover:scale-105 group-hover:bg-white/30 lg:px-8 lg:py-4"
             >
-              <h2 class="text-2xl font-bold tracking-wider text-white">
+              <h2
+                class="text-sm font-bold tracking-wider text-white lg:text-2xl"
+              >
                 {{ destination.title }}
               </h2>
             </div>
