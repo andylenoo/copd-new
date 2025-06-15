@@ -40,23 +40,39 @@ export class DiagnoseFormComponent {
   }
 
   submit() {
-    if (this.form.invalid) return;
+    this.formSubmitted = true;
 
-    const formData = new FormData();
+    if (this.form.invalid) {
+      return;
+    }
+
+    // Convert form data to URL-encoded format (what FormSubmit expects)
+    const formData = new URLSearchParams();
     Object.entries(this.form.value).forEach(([key, value]) => {
       formData.append(key, value as string);
     });
 
-    fetch('https://formsubmit.co/timurleno1@gmail.com', {
+    formData.append('_captcha', 'false');
+    formData.append('_template', 'table');
+
+    fetch('https://formsubmit.co/ajax/eb88825f966d55c1a8b2a9094e418fa1', {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
       body: formData,
     })
-      .then((res) => {
-        if (res.ok) {
-          window.scrollTo(0, 0);
-          this.formSubmitted = true;
-        }
+      .then((response) => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.json();
       })
-      .catch(() => alert('Error sending form'));
+      .then((data) => {
+        console.log('Success:', data);
+        this.formSubmitted = true;
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        alert('Error sending form. Please try again later.');
+      });
   }
 }
