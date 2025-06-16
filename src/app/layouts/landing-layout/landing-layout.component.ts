@@ -17,6 +17,7 @@ import { CompactContactUsComponent } from '../../components/compact-contact-us/c
 import { HospitalsComponent } from '../../components/hospitals/hospitals.component';
 import { WhyUsComponent } from '../../components/why-us/why-us.component';
 import { CustomerJourneyComponent } from '../../components/customer-journey/customer-journey.component';
+import { ImmediateAttentionComponent } from '../../components/immediate-attention/immediate-attention.component';
 
 @Component({
   selector: 'app-landing-layout',
@@ -43,6 +44,7 @@ import { CustomerJourneyComponent } from '../../components/customer-journey/cust
     HospitalsComponent,
     WhyUsComponent,
     CustomerJourneyComponent,
+    ImmediateAttentionComponent,
   ],
 })
 export class LandingLayoutComponent implements OnInit {

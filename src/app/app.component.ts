@@ -41,7 +41,7 @@ export class AppComponent {
     // console.log('AppComponent initialized');
     translate.addLangs(['en', 'tr']);
     translate.setDefaultLang('en');
-    translate.use('tr');
+    translate.use('en');
 
     // this.translate.setDefaultLang('en');
     this.router.events

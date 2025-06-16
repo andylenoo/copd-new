@@ -1,37 +1,44 @@
 <div class="mx-5 mt-[80px] mb-[80px] lg:mx-[250px] lg:mt-0">
   <h2 class="text-brandColorPrimary mt-5 mb-10 text-center text-4xl font-bold">
-    What is COPD?
+    {{ "What is COPD?" | translate }}
   </h2>
 
   <p class="mb-[40px] text-gray-700">
-    COPD, or Chronic Obstructive Pulmonary Disease, is a progressive lung
-    disease that makes it hard to breathe. It is typically caused by long-term
-    exposure to irritating gases or particulate matter, most often from
-    cigarette smoke. Other risk factors include air pollution, occupational
-    dusts/chemicals, and genetic conditions like alpha-1 antitrypsin deficiency.
+    {{
+      "COPD, or Chronic Obstructive Pulmonary Disease, is a progressive lung disease that makes it hard to breathe. It is typically caused by long-term exposure to irritating gases or particulate matter, most often from cigarette smoke. Other risk factors include air pollution, occupational dusts/chemicals, and genetic conditions like alpha-1 antitrypsin deficiency."
+        | translate
+    }}
   </p>
   <p class="mb-[40px] text-gray-700">
-    The treatment of COPD focuses on relieving symptoms, improving quality of
-    life, slowing disease progression, and preventing complications. While COPD
-    is a chronic condition with no cure, a comprehensive treatment plan can help
-    patients breathe better and stay active.
+    {{
+      "The treatment of COPD focuses on relieving symptoms, improving quality of life, slowing disease progression, and preventing complications. While COPD is a chronic condition with no cure, a comprehensive treatment plan can help patients breathe better and stay active."
+        | translate
+    }}
   </p>
 
   <strong class="text-brandColorPrimary text-center font-bold">
-    Main features of COPD:
+    {{ "Main features of COPD:" | translate }}
   </strong>
 
   <div class="mt-5 mb-[80px] grid grid-cols-1 gap-4 md:grid-cols-2">
     <div class="rounded bg-gray-50 p-4 shadow">
-      <h3 class="text-lg font-semibold">Chronic Bronchitis</h3>
+      <h3 class="text-lg font-semibold">
+        {{ "Chronic Bronchitis" | translate }}
+      </h3>
       <p class="text-gray-600">
-        Long-term inflammation of the airways, with cough and mucus production.
+        {{
+          "Long-term inflammation of the airways, with cough and mucus production."
+            | translate
+        }}
       </p>
     </div>
     <div class="rounded bg-gray-50 p-4 shadow">
-      <h3 class="text-lg font-semibold">Emphysema</h3>
+      <h3 class="text-lg font-semibold">{{ "Emphysema" | translate }}</h3>
       <p class="text-gray-600">
-        Damage to the air sacs (alveoli) in the lungs, reducing oxygen exchange.
+        {{
+          "Damage to the air sacs (alveoli) in the lungs, reducing oxygen exchange."
+            | translate
+        }}
       </p>
     </div>
   </div>
@@ -44,284 +51,365 @@
   <section class="mx-auto max-w-4xl">
     <div class="mt-[40px] flex flex-col gap-5">
       <h2 class="text-brandColorPrimary mb-6 text-center text-3xl font-bold">
-        Diagnosis
+        {{ "Diagnosis" | translate }}
       </h2>
       <p class="text-gray-700">
-        COPD is diagnosed using lung function tests such as spirometry, which
-        measures how much air you can breathe in and out. Imaging tests (e.g.,
-        chest X-ray or CT scan) and blood tests may also be used to rule out
-        other conditions and assess severity.
+        {{
+          "COPD is diagnosed using lung function tests such as spirometry, which measures how much air you can breathe in and out. Imaging tests (e.g., chest X-ray or CT scan) and blood tests may also be used to rule out other conditions and assess severity."
+            | translate
+        }}
       </p>
 
       <h2 class="text-brandColorPrimary mb-6 text-center text-3xl font-bold">
-        Treatment Overview
+        {{ "Treatment Overview" | translate }}
       </h2>
       <p class="text-gray-700">
-        While there is no cure for COPD, treatment focuses on symptom relief,
-        slowing progression, and improving daily function. This includes
-        medications (bronchodilators, inhaled corticosteroids), pulmonary
-        rehabilitation, oxygen therapy, lifestyle changes (especially quitting
-        smoking), and, in advanced cases, surgery. Preventing flare-ups and
-        infections with vaccinations is also vital.
+        {{
+          "While there is no cure for COPD, treatment focuses on symptom relief, slowing progression, and improving daily function. This includes medications (bronchodilators, inhaled corticosteroids), pulmonary rehabilitation, oxygen therapy, lifestyle changes (especially quitting smoking), and, in advanced cases, surgery. Preventing flare-ups and infections with vaccinations is also vital."
+            | translate
+        }}
       </p>
 
       <h2 class="text-brandColorPrimary mb-6 text-center text-3xl font-bold">
-        Living with COPD
+        {{ "Living with COPD" | translate }}
       </h2>
       <p class="text-gray-700">
-        Managing COPD involves daily care, including adhering to treatment
-        plans, staying physically active within limits, maintaining a healthy
-        diet, and monitoring for any changes in symptoms. Emotional and
-        psychological support may also be necessary due to the impact of chronic
-        illness.
+        {{
+          "Managing COPD involves daily care, including adhering to treatment plans, staying physically active within limits, maintaining a healthy diet, and monitoring for any changes in symptoms. Emotional and psychological support may also be necessary due to the impact of chronic illness."
+            | translate
+        }}
       </p>
 
       <section
         class="bg-brandColorPrimary mx-auto my-10 w-full rounded-2xl px-4 py-10 text-center text-white shadow-lg"
       >
         <h2 class="mb-4 text-2xl font-bold md:text-3xl">
-          Do You Think You Might Have COPD?
+          {{ "Do You Think You Might Have COPD?" | translate }}
         </h2>
         <p class="mb-6 text-lg">
-          Take our free 2-minute assessment to find out.
+          {{ "Take our free 2-minute assessment to find out." | translate }}
         </p>
         <a
           [routerLink]="['/diagnose']"
           class="text-brandColorPrimary inline-block rounded-full bg-white px-6 py-3 font-semibold transition hover:bg-gray-100"
         >
-          Take the Free 2-Minute COPD Assessment
+          {{ "Take the Free 2-Minute COPD Assessment" | translate }}
         </a>
       </section>
 
       <h2 class="text-brandColorPrimary mb-6 text-center text-3xl font-bold">
-        Eating Well with COPD
+        {{ "Eating Well with COPD" | translate }}
       </h2>
 
       <p class="text-gray-700">
-        Chronic Obstructive Pulmonary Disease (COPD) and feeding/nutrition are
-        closely linked. Proper nutrition can help manage COPD symptoms, reduce
-        the risk of complications, and improve quality of life.
+        {{
+          "Chronic Obstructive Pulmonary Disease (COPD) and feeding/nutrition are closely linked. Proper nutrition can help manage COPD symptoms, reduce the risk of complications, and improve quality of life."
+            | translate
+        }}
       </p>
 
       <h2 class="text-brandColorPrimary mb-6 text-center text-2xl font-bold">
-        1. Nutritional Challenges in COPD
+        {{ "1. Nutritional Challenges in COPD" | translate }}
       </h2>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
         <li>
-          <strong>Increased energy needs:</strong> Breathing requires more
-          effort, increasing caloric expenditure.
+          <strong>{{ "Increased energy needs:" | translate }}</strong>
+          {{
+            "Breathing requires more effort, increasing caloric expenditure."
+              | translate
+          }}
         </li>
         <li>
-          <strong>Loss of appetite:</strong> Due to shortness of breath,
-          fatigue, or medication side effects.
+          <strong>{{ "Loss of appetite:" | translate }}</strong>
+          {{
+            "Due to shortness of breath, fatigue, or medication side effects."
+              | translate
+          }}
         </li>
         <li>
-          <strong>Weight loss and muscle wasting:</strong> Especially in severe
-          COPD.
+          <strong>{{ "Weight loss and muscle wasting:" | translate }}</strong>
+          {{ "Especially in severe COPD." | translate }}
         </li>
         <li>
-          <strong>Difficulty eating:</strong> Dyspnea (shortness of breath)
-          during meals may lead to inadequate intake.
+          <strong>{{ "Difficulty eating:" | translate }}</strong>
+          {{
+            "Dyspnea (shortness of breath) during meals may lead to inadequate intake."
+              | translate
+          }}
         </li>
       </ul>
 
       <h2
         class="text-brandColorPrimary mt-10 mb-6 text-center text-2xl font-bold"
       >
-        2. Nutritional Goals for COPD Patients
+        {{ "2. Nutritional Goals for COPD Patients" | translate }}
       </h2>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
         <li>
-          <strong>Maintain optimal body weight:</strong> Avoid undernutrition
-          and, if applicable, manage obesity.
+          <strong>{{ "Maintain optimal body weight:" | translate }}</strong>
+          {{
+            "Avoid undernutrition and, if applicable, manage obesity."
+              | translate
+          }}
         </li>
         <li>
-          <strong>Preserve muscle mass:</strong> Especially respiratory muscles.
+          <strong>{{ "Preserve muscle mass:" | translate }}</strong>
+          {{ "Especially respiratory muscles." | translate }}
         </li>
         <li>
-          <strong>Reduce carbon dioxide production:</strong> Certain foods can
-          help reduce respiratory load.
+          <strong>{{ "Reduce carbon dioxide production:" | translate }}</strong>
+          {{ "Certain foods can help reduce respiratory load." | translate }}
         </li>
       </ul>
 
       <h2
         class="text-brandColorPrimary mt-10 mb-6 text-center text-2xl font-bold"
       >
-        3. Feeding Strategies
+        {{ "3. Feeding Strategies" | translate }}
       </h2>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
         <li>
-          <strong>Small, frequent meals:</strong> To avoid fatigue and stomach
-          distension.
+          <strong>{{ "Small, frequent meals:" | translate }}</strong>
+          {{ "To avoid fatigue and stomach distension." | translate }}
         </li>
         <li>
-          <strong>Soft, easy-to-chew foods:</strong> Reduce effort and oxygen
-          consumption.
+          <strong>{{ "Soft, easy-to-chew foods:" | translate }}</strong>
+          {{ "Reduce effort and oxygen consumption." | translate }}
         </li>
         <li>
-          <strong>Adequate hydration:</strong> Helps thin mucus secretions.
+          <strong>{{ "Adequate hydration:" | translate }}</strong>
+          {{ "Helps thin mucus secretions." | translate }}
         </li>
         <li>
-          <strong>Rest before meals:</strong> To reduce breathlessness while
-          eating.
+          <strong>{{ "Rest before meals:" | translate }}</strong>
+          {{ "To reduce breathlessness while eating." | translate }}
         </li>
         <li>
-          <strong>Use supplemental oxygen if prescribed</strong> during meals.
+          <strong>{{
+            "Use supplemental oxygen if prescribed" | translate
+          }}</strong>
+          {{ "during meals." | translate }}
         </li>
         <li>
-          <strong>Oral nutritional supplements (ONS):</strong> May be needed in
-          undernourished patients.
+          <strong>{{
+            "Oral nutritional supplements (ONS):" | translate
+          }}</strong>
+          {{ "May be needed in undernourished patients." | translate }}
         </li>
-        <li><strong>Enteral nutrition:</strong> (tube feeding)</li>
+        <li>
+          <strong>{{ "Enteral nutrition:" | translate }}</strong>
+          {{ "(tube feeding)" | translate }}
+        </li>
       </ul>
       <h2
         class="text-brandColorPrimary mt-10 mb-6 text-center text-2xl font-bold"
       >
-        4. Special Considerations
+        {{ "4. Special Considerations" | translate }}
       </h2>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
         <li>
-          <strong>Swallowing difficulties (dysphagia):</strong> May occur in
-          advanced COPD; requires texture-modified diets.
+          <strong>{{
+            "Swallowing difficulties (dysphagia):" | translate
+          }}</strong>
+          {{
+            "May occur in advanced COPD; requires texture-modified diets."
+              | translate
+          }}
         </li>
         <li>
-          <strong>Gastroesophageal reflux disease (GERD):</strong> Common in
-          COPD and can worsen symptoms—avoid large meals, acidic or spicy foods.
+          <strong>{{
+            "Gastroesophageal reflux disease (GERD):" | translate
+          }}</strong>
+          {{
+            "Common in COPD and can worsen symptoms—avoid large meals, acidic or spicy foods."
+              | translate
+          }}
         </li>
       </ul>
 
       <h2
         class="text-brandColorPrimary mt-10 mb-6 text-center text-2xl font-bold"
       >
-        5. Sample Meal Plan
+        {{ "5. Sample Meal Plan" | translate }}
       </h2>
       <p class="mb-6 text-gray-600">
-        Focus on easy-to-eat, high-protein, calorie-dense, low-carb foods.
+        {{
+          "Focus on easy-to-eat, high-protein, calorie-dense, low-carb foods."
+            | translate
+        }}
       </p>
       <ul class="flex flex-col gap-4 text-gray-600">
         <li>
-          <strong>Breakfast:</strong> Scrambled eggs, oatmeal, banana, whole
-          milk
+          <strong>{{ "Breakfast:" | translate }}</strong>
+          {{ "Scrambled eggs, oatmeal, banana, whole milk" | translate }}
         </li>
         <li>
-          <strong>Snack:</strong> Yogurt smoothie with protein and peanut butter
+          <strong>{{ "Snack:" | translate }}</strong>
+          {{ "Yogurt smoothie with protein and peanut butter" | translate }}
         </li>
         <li>
-          <strong>Lunch:</strong> Mashed potatoes, meatloaf, carrots, fruit
-          puree
+          <strong>{{ "Lunch:" | translate }}</strong>
+          {{ "Mashed potatoes, meatloaf, carrots, fruit puree" | translate }}
         </li>
-        <li><strong>Snack:</strong> Cottage cheese with peaches</li>
         <li>
-          <strong>Dinner:</strong> Chicken rice casserole, soft green beans,
-          roll with butter
+          <strong>{{ "Snack:" | translate }}</strong>
+          {{ "Cottage cheese with peaches" | translate }}
         </li>
-        <li><strong>Snack:</strong> Nutritional drink</li>
+        <li>
+          <strong>{{ "Dinner:" | translate }}</strong>
+          {{
+            "Chicken rice casserole, soft green beans, roll with butter"
+              | translate
+          }}
+        </li>
+        <li>
+          <strong>{{ "Snack:" | translate }}</strong>
+          {{ "Nutritional drink" | translate }}
+        </li>
       </ul>
 
       <p class="text-gray-600">
-        <strong> Tips:</strong> Encourage 5–6 small meals per day. Avoid
-        gas-producing foods (beans, carbonated drinks) and keep hydration
-        adequate.
+        <strong> {{ "Tips:" | translate }}</strong>
+        {{
+          "Encourage 5–6 small meals per day. Avoid gas-producing foods (beans, carbonated drinks) and keep hydration adequate."
+            | translate
+        }}
       </p>
 
       <h2
         class="text-brandColorPrimary mt-10 mb-6 text-center text-2xl font-bold"
       >
-        6. Eating Well with COPD
+        {{ "6. Eating Well with COPD" | translate }}
       </h2>
-      <span class="font-bold">Why Nutrition Matters</span>
+      <span class="font-bold">{{ "Why Nutrition Matters" | translate }}</span>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Helps you breathe easier</li>
-        <li>Keeps your muscles strong</li>
-        <li>Prevents weight loss and infections</li>
+        <li>{{ "Helps you breathe easier" | translate }}</li>
+        <li>{{ "Keeps your muscles strong" | translate }}</li>
+        <li>{{ "Prevents weight loss and infections" | translate }}</li>
       </ul>
 
-      <span class="font-bold">Tips for Easier Eating</span>
+      <span class="font-bold">{{ "Tips for Easier Eating" | translate }}</span>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Eat small meals 5–6 times a day</li>
-        <li>Rest before and after meals</li>
-        <li>Sit upright when eating</li>
-        <li>Use oxygen during meals if prescribed</li>
+        <li>{{ "Eat small meals 5–6 times a day" | translate }}</li>
+        <li>{{ "Rest before and after meals" | translate }}</li>
+        <li>{{ "Sit upright when eating" | translate }}</li>
+        <li>{{ "Use oxygen during meals if prescribed" | translate }}</li>
       </ul>
 
-      <span class="font-bold">What to Eat</span>
+      <span class="font-bold">{{ "What to Eat" | translate }}</span>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Protein-rich foods: Eggs, cheese, meat, fish, legumes</li>
-        <li>Healthy fats: Avocados, nuts, olive oil</li>
-        <li>Soft fruits and vegetables</li>
-        <li>Whole milk, yogurt, smoothies</li>
+        <li>
+          {{
+            "Protein-rich foods: Eggs, cheese, meat, fish, legumes" | translate
+          }}
+        </li>
+        <li>{{ "Healthy fats: Avocados, nuts, olive oil" | translate }}</li>
+        <li>{{ "Soft fruits and vegetables" | translate }}</li>
+        <li>{{ "Whole milk, yogurt, smoothies" | translate }}</li>
       </ul>
 
-      <span class="font-bold">Foods to Limit </span>
+      <span class="font-bold">{{ "Foods to Limit" | translate }}</span>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>High-sugar foods</li>
-        <li>Gas-producing foods (beans, cabbage, soda)</li>
-        <li>Fried, greasy foods (harder to digest)</li>
+        <li>{{ "High-sugar foods" | translate }}</li>
+        <li>{{ "Gas-producing foods (beans, cabbage, soda)" | translate }}</li>
+        <li>{{ "Fried, greasy foods (harder to digest)" | translate }}</li>
       </ul>
 
-      <span class="font-bold">Stay Hydrated </span>
+      <span class="font-bold">{{ "Stay Hydrated" | translate }}</span>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Drink fluids to thin mucus (unless on fluid restriction)</li>
+        <li>
+          {{
+            "Drink fluids to thin mucus (unless on fluid restriction)"
+              | translate
+          }}
+        </li>
       </ul>
 
       <p class="text-gray-600">
-        Talk to your doctor or dietitian about supplements if you’re losing
-        weight.
+        {{
+          "Talk to your doctor or dietitian about supplements if you're losing weight."
+            | translate
+        }}
       </p>
 
       <h2
         class="text-brandColorPrimary mt-10 mb-6 text-center text-2xl font-bold"
       >
-        7. Enteral Feeding Protocol
+        {{ "7. Enteral Feeding Protocol" | translate }}
       </h2>
 
       <p class="text-gray-600">
-        Enteral nutrition may be necessary when oral intake is insufficient.
+        {{
+          "Enteral nutrition may be necessary when oral intake is insufficient."
+            | translate
+        }}
       </p>
 
-      <span class="font-bold">Assessment Before Starting</span>
+      <span class="font-bold">{{
+        "Assessment Before Starting" | translate
+      }}</span>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Nutritional status (weight loss, BMI, labs)</li>
-        <li>Swallowing ability (refer to speech therapist if needed)</li>
-        <li>Respiratory status</li>
-        <li>GI function (bowel sounds, motility)</li>
-      </ul>
-
-      <span class="font-bold">Feeding Options</span>
-
-      <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li><strong>Short-term:</strong> Nasogastric (NG) tube</li>
+        <li>{{ "Nutritional status (weight loss, BMI, labs)" | translate }}</li>
         <li>
-          <strong>Long-term:</strong> Percutaneous Endoscopic Gastrostomy (PEG)
+          {{
+            "Swallowing ability (refer to speech therapist if needed)"
+              | translate
+          }}
         </li>
+        <li>{{ "Respiratory status" | translate }}</li>
+        <li>{{ "GI function (bowel sounds, motility)" | translate }}</li>
       </ul>
 
-      <span class="font-bold">Formula Choice</span>
+      <span class="font-bold">{{ "Feeding Options" | translate }}</span>
 
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
         <li>
-          <strong>Standard polymeric:</strong> For most patients with intact GI
-          function
+          <strong>{{ "Short-term:" | translate }}</strong>
+          {{ "Nasogastric (NG) tube" | translate }}
         </li>
         <li>
-          <strong>Pulmonary-specific formulas:</strong> Higher fat, lower
-          carbohydrate, designed to reduce CO₂ production
+          <strong>{{ "Long-term:" | translate }}</strong>
+          {{ "Percutaneous Endoscopic Gastrostomy (PEG)" | translate }}
         </li>
       </ul>
 
-      <span class="font-bold">Initiation and Monitoring</span>
+      <span class="font-bold">{{ "Formula Choice" | translate }}</span>
 
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Start at low rate (20–30 mL/hr), advance gradually</li>
+        <li>
+          <strong>{{ "Standard polymeric:" | translate }}</strong>
+          {{ "For most patients with intact GI function" | translate }}
+        </li>
+        <li>
+          <strong>{{ "Pulmonary-specific formulas:" | translate }}</strong>
+          {{
+            "Higher fat, lower carbohydrate, designed to reduce CO₂ production"
+              | translate
+          }}
+        </li>
+      </ul>
+
+      <span class="font-bold">{{
+        "Initiation and Monitoring" | translate
+      }}</span>
+
+      <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
+        <li>
+          {{ "Start at low rate (20–30 mL/hr), advance gradually" | translate }}
+        </li>
         <ul class="list-disc pl-4">
           <li>
-            Monitor for:
+            {{ "Monitor for:" | translate }}
             <ul class="mt-2 list-[circle] space-y-1 pl-5">
-              <li>Tolerance (nausea, distention)</li>
-              <li>Residuals</li>
-              <li>Fluid balance</li>
-              <li>Respiratory status (watch for aspiration signs)</li>
-              <li>Labs: electrolytes, glucose, BUN/Cr</li>
+              <li>{{ "Tolerance (nausea, distention)" | translate }}</li>
+              <li>{{ "Residuals" | translate }}</li>
+              <li>{{ "Fluid balance" | translate }}</li>
+              <li>
+                {{
+                  "Respiratory status (watch for aspiration signs)" | translate
+                }}
+              </li>
+              <li>{{ "Labs: electrolytes, glucose, BUN/Cr" | translate }}</li>
             </ul>
           </li>
         </ul>
@@ -331,100 +419,122 @@
         class="mx-auto my-10 w-full rounded-2xl border border-[#fde68a] bg-[#fef3c7] px-4 py-10 text-center text-[#92400e] shadow-lg"
       >
         <h2 class="mb-4 text-2xl font-bold md:text-3xl">
-          Need a COPD-Friendly Nutrition Plan?
+          {{ "Need a COPD-Friendly Nutrition Plan?" | translate }}
         </h2>
         <p class="mb-6 text-lg">
-          Upload your health records and get a personalized meal plan reviewed
-          by our specialists.
+          {{
+            "Upload your health records and get a personalized meal plan reviewed by our specialists."
+              | translate
+          }}
         </p>
         <a
           [routerLink]="['/diagnose']"
           class="inline-block rounded-full bg-[#92400e] px-6 py-3 font-semibold text-white transition hover:bg-[#78350f]"
         >
-          Get My Custom Meal Plan
+          {{ "Get My Custom Meal Plan" | translate }}
         </a>
       </section>
 
       <h2
         class="text-brandColorPrimary mt-10 mb-6 text-center text-3xl font-bold"
       >
-        COPD and Exercise
+        {{ "COPD and Exercise" | translate }}
       </h2>
       <p class="text-gray-700">
-        COPD and Exercise (Spor) Exercise is a key component in managing Chronic
-        Obstructive Pulmonary Disease (COPD). Despite the breathing
-        difficulties, regular physical activity can improve symptoms, reduce
-        hospitalizations, and enhance quality of life.
+        {{
+          "COPD and Exercise (Spor) Exercise is a key component in managing Chronic Obstructive Pulmonary Disease (COPD). Despite the breathing difficulties, regular physical activity can improve symptoms, reduce hospitalizations, and enhance quality of life."
+            | translate
+        }}
       </p>
 
       <h2
         class="text-brandColorPrimary mt-10 mb-6 text-center text-2xl font-bold"
       >
-        Benefits of Exercise in COPD
+        {{ "Benefits of Exercise in COPD" | translate }}
       </h2>
 
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Improves lung efficiency and oxygen use</li>
-        <li>Strengthens respiratory and peripheral muscles</li>
-        <li>Reduces shortness of breath (dyspnea) during daily activities</li>
-        <li>Improves mood and reduces anxiety/depression</li>
-        <li>Increases exercise tolerance and overall stamina</li>
-        <li>Decreases frequency of exacerbations and hospital visits</li>
+        <li>{{ "Improves lung efficiency and oxygen use" | translate }}</li>
+        <li>
+          {{ "Strengthens respiratory and peripheral muscles" | translate }}
+        </li>
+        <li>
+          {{
+            "Reduces shortness of breath (dyspnea) during daily activities"
+              | translate
+          }}
+        </li>
+        <li>
+          {{ "Improves mood and reduces anxiety/depression" | translate }}
+        </li>
+        <li>
+          {{ "Increases exercise tolerance and overall stamina" | translate }}
+        </li>
+        <li>
+          {{
+            "Decreases frequency of exacerbations and hospital visits"
+              | translate
+          }}
+        </li>
       </ul>
 
-      <span class="font-bold">Types of Exercises: </span>
+      <span class="font-bold">{{ "Types of Exercises:" | translate }}</span>
 
       <div class="overflow-x-auto">
         <table class="min-w-full border border-gray-300 text-left text-sm">
           <thead class="bg-gray-100">
             <tr>
               <th class="border-b border-gray-300 px-4 py-2 font-semibold">
-                Type
+                {{ "Type" | translate }}
               </th>
               <th class="border-b border-gray-300 px-4 py-2 font-semibold">
-                Examples
+                {{ "Examples" | translate }}
               </th>
               <th class="border-b border-gray-300 px-4 py-2 font-semibold">
-                How Often
+                {{ "How Often" | translate }}
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td class="border-b border-gray-200 px-4 py-2 font-semibold">
-                Aerobic (Endurance)
+                {{ "Aerobic (Endurance)" | translate }}
               </td>
               <td class="border-b border-gray-200 px-4 py-2">
-                Walking, cycling, swimming
+                {{ "Walking, cycling, swimming" | translate }}
               </td>
               <td class="border-b border-gray-200 px-4 py-2">
-                3–5 times/week, 20–30 mins
+                {{ "3–5 times/week, 20–30 mins" | translate }}
               </td>
             </tr>
             <tr>
               <td class="border-b border-gray-200 px-4 py-2 font-semibold">
-                Strength (Resistance)
+                {{ "Strength (Resistance)" | translate }}
               </td>
               <td class="border-b border-gray-200 px-4 py-2">
-                Light weights, resistance bands, bodyweight
+                {{ "Light weights, resistance bands, bodyweight" | translate }}
               </td>
               <td class="border-b border-gray-200 px-4 py-2">
-                2–3 times/week, 15–20 mins
+                {{ "2–3 times/week, 15–20 mins" | translate }}
               </td>
             </tr>
             <tr>
               <td class="border-b border-gray-200 px-4 py-2 font-semibold">
-                Breathing Exercises
+                {{ "Breathing Exercises" | translate }}
               </td>
               <td class="border-b border-gray-200 px-4 py-2">
-                Pursed-lip, diaphragmatic breathing
+                {{ "Pursed-lip, diaphragmatic breathing" | translate }}
               </td>
-              <td class="border-b border-gray-200 px-4 py-2">Daily</td>
+              <td class="border-b border-gray-200 px-4 py-2">
+                {{ "Daily" | translate }}
+              </td>
             </tr>
             <tr>
-              <td class="px-4 py-2 font-semibold">Flexibility</td>
-              <td class="px-4 py-2">Stretching, yoga</td>
-              <td class="px-4 py-2">2–3 times/week</td>
+              <td class="px-4 py-2 font-semibold">
+                {{ "Flexibility" | translate }}
+              </td>
+              <td class="px-4 py-2">{{ "Stretching, yoga" | translate }}</td>
+              <td class="px-4 py-2">{{ "2–3 times/week" | translate }}</td>
             </tr>
           </tbody>
         </table>
@@ -433,270 +543,375 @@
       <h2
         class="text-brandColorPrimary mt-10 mb-6 text-center text-2xl font-bold"
       >
-        Recommended Exercise Types
+        {{ "Recommended Exercise Types" | translate }}
       </h2>
 
       <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        1. Aerobic (Cardio) Exercise
+        {{ "1. Aerobic (Cardio) Exercise" | translate }}
       </h2>
-      <p class="text-gray-700">Improves endurance</p>
+      <p class="text-gray-700">{{ "Improves endurance" | translate }}</p>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Walking (with or without assistive devices)</li>
-        <li>Stationary cycling</li>
-        <li>Treadmill (low pace)</li>
-        <li>Swimming (if tolerated)</li>
+        <li>{{ "Walking (with or without assistive devices)" | translate }}</li>
+        <li>{{ "Stationary cycling" | translate }}</li>
+        <li>{{ "Treadmill (low pace)" | translate }}</li>
+        <li>{{ "Swimming (if tolerated)" | translate }}</li>
       </ul>
 
       <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        2. Strength Training
+        {{ "2. Strength Training" | translate }}
       </h2>
-      <p class="text-gray-700">Maintains muscle mass</p>
+      <p class="text-gray-700">{{ "Maintains muscle mass" | translate }}</p>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Resistance bands or light weights</li>
-        <li>Bodyweight exercises (squats to a chair, wall push-ups)</li>
+        <li>{{ "Resistance bands or light weights" | translate }}</li>
+        <li>
+          {{
+            "Bodyweight exercises (squats to a chair, wall push-ups)"
+              | translate
+          }}
+        </li>
       </ul>
 
       <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        3. Breathing Exercises
+        {{ "3. Breathing Exercises" | translate }}
       </h2>
-      <p class="text-gray-700">Increases breathing efficiency</p>
+      <p class="text-gray-700">
+        {{ "Increases breathing efficiency" | translate }}
+      </p>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Pursed-lip breathing</li>
-        <li>Diaphragmatic (belly) breathing</li>
+        <li>{{ "Pursed-lip breathing" | translate }}</li>
+        <li>{{ "Diaphragmatic (belly) breathing" | translate }}</li>
       </ul>
 
       <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        4. Stretching & Flexibility
+        {{ "4. Stretching & Flexibility" | translate }}
       </h2>
-      <p class="text-gray-700">Reduces stiffness</p>
+      <p class="text-gray-700">{{ "Reduces stiffness" | translate }}</p>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Gentle yoga or chair yoga</li>
-        <li>Arm/shoulder/neck stretches</li>
+        <li>{{ "Gentle yoga or chair yoga" | translate }}</li>
+        <li>{{ "Arm/shoulder/neck stretches" | translate }}</li>
       </ul>
 
       <h2
         class="text-brandColorPrimary mt-10 mb-6 text-center text-2xl font-bold"
       >
-        Pulmonary Rehabilitation Programs
+        {{ "Pulmonary Rehabilitation Programs" | translate }}
       </h2>
 
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
         <li>
-          Structured, supervised programs combining exercise, education, and
-          support
+          {{
+            "Structured, supervised programs combining exercise, education, and support"
+              | translate
+          }}
         </li>
         <ul class="list-disc pl-4">
           <li>
-            Typically includes:
+            {{ "Typically includes:" | translate }}
 
             <ul class="mt-2 list-[circle] space-y-1 pl-5">
-              <li>Monitoring of oxygen saturation and heart rate</li>
-              <li>Individualized exercise plans</li>
-              <li>Nutritional and psychological counseling</li>
-              <li>Respiratory status (watch for aspiration signs)</li>
-              <li>Labs: electrolytes, glucose, BUN/Cr</li>
+              <li>
+                {{
+                  "Monitoring of oxygen saturation and heart rate" | translate
+                }}
+              </li>
+              <li>{{ "Individualized exercise plans" | translate }}</li>
+              <li>
+                {{ "Nutritional and psychological counseling" | translate }}
+              </li>
+              <li>
+                {{
+                  "Respiratory status (watch for aspiration signs)" | translate
+                }}
+              </li>
+              <li>{{ "Labs: electrolytes, glucose, BUN/Cr" | translate }}</li>
             </ul>
           </li>
         </ul>
 
-        <li>Ideal for moderate to severe COPD patients</li>
+        <li>{{ "Ideal for moderate to severe COPD patients" | translate }}</li>
       </ul>
 
       <h2
         class="text-brandColorPrimary mt-10 mb-6 text-center text-2xl font-bold"
       >
-        Important Safety Tips
+        {{ "Important Safety Tips" | translate }}
       </h2>
 
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Use bronchodilators before exercise if prescribed</li>
-        <li>Warm-up and cool-down are essential</li>
-        <li>Use portable oxygen if prescribed during exertion</li>
         <li>
-          Stop if symptoms worsen: extreme shortness of breath, dizziness, chest
-          pain
+          {{ "Use bronchodilators before exercise if prescribed" | translate }}
+        </li>
+        <li>{{ "Warm-up and cool-down are essential" | translate }}</li>
+        <li>
+          {{ "Use portable oxygen if prescribed during exertion" | translate }}
+        </li>
+        <li>
+          {{
+            "Stop if symptoms worsen: extreme shortness of breath, dizziness, chest pain"
+              | translate
+          }}
         </li>
       </ul>
 
       <table class="w-full table-auto border-collapse text-left text-sm">
         <thead>
           <tr class="bg-gray-100">
-            <th class="border px-4 py-2 font-semibold">Day</th>
-            <th class="border px-4 py-2 font-semibold">Activity</th>
-            <th class="border px-4 py-2 font-semibold">Duration</th>
+            <th class="border px-4 py-2 font-semibold">
+              {{ "Day" | translate }}
+            </th>
+            <th class="border px-4 py-2 font-semibold">
+              {{ "Activity" | translate }}
+            </th>
+            <th class="border px-4 py-2 font-semibold">
+              {{ "Duration" | translate }}
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="border px-4 py-2">Mon</td>
-            <td class="border px-4 py-2">Brisk walking</td>
-            <td class="border px-4 py-2">20–30 min</td>
+            <td class="border px-4 py-2">{{ "Mon" | translate }}</td>
+            <td class="border px-4 py-2">{{ "Brisk walking" | translate }}</td>
+            <td class="border px-4 py-2">{{ "20–30 min" | translate }}</td>
           </tr>
           <tr class="bg-gray-50">
-            <td class="border px-4 py-2">Tue</td>
-            <td class="border px-4 py-2">Resistance training</td>
-            <td class="border px-4 py-2">20 min</td>
-          </tr>
-          <tr>
-            <td class="border px-4 py-2">Wed</td>
-            <td class="border px-4 py-2">Breathing exercises + yoga</td>
-            <td class="border px-4 py-2">30 min</td>
-          </tr>
-          <tr class="bg-gray-50">
-            <td class="border px-4 py-2">Thu</td>
-            <td class="border px-4 py-2">Walking</td>
-            <td class="border px-4 py-2">30 min</td>
-          </tr>
-          <tr>
-            <td class="border px-4 py-2">Fri</td>
-            <td class="border px-4 py-2">Strength training</td>
-            <td class="border px-4 py-2">20 min</td>
-          </tr>
-          <tr class="bg-gray-50">
-            <td class="border px-4 py-2">Sat</td>
+            <td class="border px-4 py-2">{{ "Tue" | translate }}</td>
             <td class="border px-4 py-2">
-              Light household chores or gardening
+              {{ "Resistance training" | translate }}
             </td>
-            <td class="border px-4 py-2">30 min</td>
+            <td class="border px-4 py-2">{{ "20 min" | translate }}</td>
           </tr>
           <tr>
-            <td class="border px-4 py-2">Sun</td>
-            <td class="border px-4 py-2">Rest or light stretching</td>
+            <td class="border px-4 py-2">{{ "Wed" | translate }}</td>
+            <td class="border px-4 py-2">
+              {{ "Breathing exercises + yoga" | translate }}
+            </td>
+            <td class="border px-4 py-2">{{ "30 min" | translate }}</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="border px-4 py-2">{{ "Thu" | translate }}</td>
+            <td class="border px-4 py-2">{{ "Walking" | translate }}</td>
+            <td class="border px-4 py-2">{{ "30 min" | translate }}</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">{{ "Fri" | translate }}</td>
+            <td class="border px-4 py-2">
+              {{ "Strength training" | translate }}
+            </td>
+            <td class="border px-4 py-2">{{ "20 min" | translate }}</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="border px-4 py-2">{{ "Sat" | translate }}</td>
+            <td class="border px-4 py-2">
+              {{ "Light household chores or gardening" | translate }}
+            </td>
+            <td class="border px-4 py-2">{{ "30 min" | translate }}</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">{{ "Sun" | translate }}</td>
+            <td class="border px-4 py-2">
+              {{ "Rest or light stretching" | translate }}
+            </td>
             <td class="border px-4 py-2">-</td>
           </tr>
         </tbody>
       </table>
       <p class="text-gray-700">
-        Exercise strengthens your lungs and muscles, helps you breathe better,
-        and gives you more energy.
+        {{
+          "Exercise strengthens your lungs and muscles, helps you breathe better, and gives you more energy."
+            | translate
+        }}
       </p>
 
       <section
         class="mx-auto my-10 w-full rounded-2xl border border-[#bae6fd] bg-[#e0f2fe] px-4 py-10 text-center text-[#075985] shadow-lg"
       >
         <h2 class="mb-4 text-2xl font-bold md:text-3xl">
-          Boost Your Breathing with Exercise
+          {{ "Boost Your Breathing with Exercise" | translate }}
         </h2>
         <p class="mb-6 text-lg">
-          Get a COPD-safe workout plan customized to your condition and goals.
+          {{
+            "Get a COPD-safe workout plan customized to your condition and goals."
+              | translate
+          }}
         </p>
         <a
           [routerLink]="['/diagnose']"
           class="inline-block rounded-full bg-[#075985] px-6 py-3 font-semibold text-white transition hover:bg-[#0c4a6e]"
         >
-          Get My COPD Exercise Plan
+          {{ "Get My COPD Exercise Plan" | translate }}
         </a>
       </section>
 
       <h2
         class="text-brandColorPrimary mt-10 mb-6 text-center text-3xl font-bold"
       >
-        Lifestyle Guide for People Living with COPD
+        {{ "Lifestyle Guide for People Living with COPD" | translate }}
       </h2>
 
       <p class="text-gray-700">
-        Lifestyle for COPD Patients, aimed at improving quality of life and
-        managing symptoms effectively.
+        {{
+          "Lifestyle for COPD Patients, aimed at improving quality of life and managing symptoms effectively."
+            | translate
+        }}
       </p>
 
       <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        1. Breathing Strategies
+        {{ "1. Breathing Strategies" | translate }}
       </h2>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
         <li>
-          <strong>Pursed-lip breathing:</strong> Inhale through the nose, exhale
-          slowly through pursed lips (like blowing out a candle). Helps reduce
-          shortness of breath.
+          <strong>{{ "Pursed-lip breathing:" | translate }}</strong>
+          {{
+            "Inhale through the nose, exhale slowly through pursed lips (like blowing out a candle). Helps reduce shortness of breath."
+              | translate
+          }}
         </li>
         <li>
-          <strong>Diaphragmatic (belly) breathing:</strong> Focuses breathing
-          using the diaphragm to reduce breathing effort
-        </li>
-      </ul>
-
-      <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        2. Stay Active
-      </h2>
-      <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Regular exercise improves endurance and lung efficiency.</li>
-        <li>Try walking, swimming, cycling, or gentle stretching.</li>
-        <li>Join a pulmonary rehabilitation program if available.</li>
-      </ul>
-
-      <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        3. Healthy Eating
-      </h2>
-      <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Eat small, frequent meals to avoid bloating and fatigue.</li>
-        <li>Focus on high-protein foods (eggs, fish, dairy).</li>
-        <li>Stay hydrated to thin mucus (unless fluid restriction applies).</li>
-        <li>Avoid gas-producing foods: cabbage, beans, carbonated drinks.</li>
-      </ul>
-
-      <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        4. Avoid Smoking and Pollutants
-      </h2>
-      <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Quit smoking—the most important step for lung health.</li>
-        <li>Avoid secondhand smoke, dust, fumes, and outdoor pollution.</li>
-        <li>
-          Use air purifiers and keep windows closed during poor air quality
-          days.
+          <strong>{{ "Diaphragmatic (belly) breathing:" | translate }}</strong>
+          {{
+            "Focuses breathing using the diaphragm to reduce breathing effort"
+              | translate
+          }}
         </li>
       </ul>
 
       <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        5. Manage Stress & Emotions
+        {{ "2. Stay Active" | translate }}
       </h2>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>COPD can increase anxiety and depression.</li>
         <li>
-          Practice relaxation techniques: deep breathing, meditation, prayer, or
-          light yoga.
+          {{
+            "Regular exercise improves endurance and lung efficiency."
+              | translate
+          }}
         </li>
-        <li>Talk to a counselor or join a support group.</li>
-      </ul>
-
-      <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        6. Take Medications Properly
-      </h2>
-      <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Learn correct inhaler technique.</li>
         <li>
-          Take medications as prescribed (bronchodilators, steroids, etc.).
+          {{
+            "Try walking, swimming, cycling, or gentle stretching." | translate
+          }}
         </li>
-        <li>Keep a medication schedule or use a pillbox.</li>
+        <li>
+          {{
+            "Join a pulmonary rehabilitation program if available." | translate
+          }}
+        </li>
       </ul>
 
       <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        7. Routine Medical Care
+        {{ "3. Healthy Eating" | translate }}
       </h2>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>See your doctor regularly.</li>
-        <li>Get flu and pneumonia vaccines.</li>
-        <li>Monitor symptoms and report changes early.</li>
+        <li>
+          {{
+            "Eat small, frequent meals to avoid bloating and fatigue."
+              | translate
+          }}
+        </li>
+        <li>
+          {{ "Focus on high-protein foods (eggs, fish, dairy)." | translate }}
+        </li>
+        <li>
+          {{
+            "Stay hydrated to thin mucus (unless fluid restriction applies)."
+              | translate
+          }}
+        </li>
+        <li>
+          {{
+            "Avoid gas-producing foods: cabbage, beans, carbonated drinks."
+              | translate
+          }}
+        </li>
       </ul>
 
       <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        8. Energy Conservation Tips
+        {{ "4. Avoid Smoking and Pollutants" | translate }}
       </h2>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>Sit while showering or cooking.</li>
-        <li>Break tasks into small steps.</li>
-        <li>Use a walker or grab bars if needed.</li>
-        <li>Organize your home to minimize unnecessary effort.</li>
+        <li>
+          {{
+            "Quit smoking—the most important step for lung health." | translate
+          }}
+        </li>
+        <li>
+          {{
+            "Avoid secondhand smoke, dust, fumes, and outdoor pollution."
+              | translate
+          }}
+        </li>
+        <li>
+          {{
+            "Use air purifiers and keep windows closed during poor air quality days."
+              | translate
+          }}
+        </li>
       </ul>
 
       <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
-        9. Know When to Get Help
+        {{ "5. Manage Stress & Emotions" | translate }}
+      </h2>
+      <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
+        <li>{{ "COPD can increase anxiety and depression." | translate }}</li>
+        <li>
+          {{
+            "Practice relaxation techniques: deep breathing, meditation, prayer, or light yoga."
+              | translate
+          }}
+        </li>
+        <li>
+          {{ "Talk to a counselor or join a support group." | translate }}
+        </li>
+      </ul>
+
+      <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
+        {{ "6. Take Medications Properly" | translate }}
+      </h2>
+      <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
+        <li>{{ "Learn correct inhaler technique." | translate }}</li>
+        <li>
+          {{
+            "Take medications as prescribed (bronchodilators, steroids, etc.)."
+              | translate
+          }}
+        </li>
+        <li>
+          {{ "Keep a medication schedule or use a pillbox." | translate }}
+        </li>
+      </ul>
+
+      <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
+        {{ "7. Routine Medical Care" | translate }}
+      </h2>
+      <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
+        <li>{{ "See your doctor regularly." | translate }}</li>
+        <li>{{ "Get flu and pneumonia vaccines." | translate }}</li>
+        <li>{{ "Monitor symptoms and report changes early." | translate }}</li>
+      </ul>
+
+      <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
+        {{ "8. Energy Conservation Tips" | translate }}
+      </h2>
+      <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
+        <li>{{ "Sit while showering or cooking." | translate }}</li>
+        <li>{{ "Break tasks into small steps." | translate }}</li>
+        <li>{{ "Use a walker or grab bars if needed." | translate }}</li>
+        <li>
+          {{ "Organize your home to minimize unnecessary effort." | translate }}
+        </li>
+      </ul>
+
+      <h2 class="text-brandColorPrimary mt-10 mb-6 text-xl font-bold">
+        {{ "9. Know When to Get Help" | translate }}
       </h2>
 
-      <p class="text-gray-700">Call your healthcare provider if you notice:</p>
+      <p class="text-gray-700">
+        {{ "Call your healthcare provider if you notice:" | translate }}
+      </p>
       <ul class="flex list-inside list-disc flex-col gap-4 text-gray-600">
-        <li>More shortness of breath than usual</li>
-        <li>Chest pain or tightness</li>
-        <li>Changes in mucus (color, amount)</li>
-        <li>Fever or flu-like symptoms</li>
+        <li>{{ "More shortness of breath than usual" | translate }}</li>
+        <li>{{ "Chest pain or tightness" | translate }}</li>
+        <li>{{ "Changes in mucus (color, amount)" | translate }}</li>
+        <li>{{ "Fever or flu-like symptoms" | translate }}</li>
       </ul>
     </div>
 
@@ -704,17 +919,19 @@
       class="mx-auto my-10 max-w-4xl rounded-2xl border border-[#fde68a] bg-[#fefce8] px-6 py-10 text-center text-[#78350f] shadow-md"
     >
       <h2 class="mb-4 text-2xl font-bold md:text-3xl">
-        Take Control of Your COPD Lifestyle
+        {{ "Take Control of Your COPD Lifestyle" | translate }}
       </h2>
       <p class="mb-6 text-lg">
-        Get your personalized COPD daily checklist — including diet, breathing,
-        and activity tips — tailored to your symptoms and goals.
+        {{
+          "Get your personalized COPD daily checklist — including diet, breathing, and activity tips — tailored to your symptoms and goals."
+            | translate
+        }}
       </p>
       <a
         [routerLink]="['/diagnose']"
         class="inline-block rounded-full bg-[#78350f] px-6 py-3 font-semibold text-white transition hover:bg-[#652e0e]"
       >
-        Download My COPD Lifestyle Plan
+        {{ "Get Your Free COPD Lifestyle Plan" | translate }}
       </a>
     </section>
   </section>
