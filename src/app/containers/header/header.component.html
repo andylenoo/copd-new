@@ -5,7 +5,7 @@
   class="shadow-header sticky top-0 z-[60]"
 >
   <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
-    <div class="flex h-[4.5rem] items-center justify-between">
+    <div class="flex h-[4.5rem] items-center justify-around">
       <div class="flex items-center" data-svelte-h="svelte-1vtvg0e">
         <a [routerLink]="['home']" class="group flex items-center"
           ><img
@@ -45,125 +45,6 @@
           class="text-nav text-drcopd-gray-600 hover:text-drcopd-navy hover:border-drcopd-gray-300 inline-flex items-center px-1 pt-1 font-medium transition-all duration-250"
           >Treatments
         </a>
-        <!-- <a
-          [routerLink]="['/how-it-work']"
-          routerLinkActive="underline underline-offset-4 text-blue-600"
-          class="text-nav text-drcopd-gray-600 hover:text-drcopd-navy hover:border-drcopd-gray-300 inline-flex items-center px-1 pt-1 font-medium transition-all duration-250"
-          >How DrCOPD Work
-        </a> -->
-      </div>
-      <div class="flex items-center min-[820px]:gap-x-2 min-[890px]:gap-x-4">
-        <div
-          id="search-container"
-          class="svelte-1pf6ay0 relative hidden min-[820px]:block"
-        >
-          <button
-            type="button"
-            class="h-10 w-10 items-center justify-center rounded-full transition-colors hover:bg-gray-100 min-[820px]:flex min-[1165px]:hidden"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide-icon lucide lucide-search text-drcopd-gray-600 size-5"
-            >
-              <circle cx="11" cy="11" r="8"></circle>
-              <path d="m21 21-4.3-4.3"></path>
-            </svg>
-          </button>
-          <!-- <div class="hidden min-[1165px]:block">
-            <div class="relative">
-              <input
-                id="search-input"
-                type="search"
-                placeholder="Search symptoms..."
-                class="focus:ring-blue/30 w-full rounded-md border border-gray-300 bg-gray-50 py-2 pr-4 pl-10 text-gray-900 placeholder-gray-500 transition-colors duration-250 focus:border-blue-700"
-                value=""
-              />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide-icon lucide lucide-search text-drcopd-gray-400 pointer-events-none absolute top-2.5 left-3 h-5 w-5"
-              >
-                <circle cx="11" cy="11" r="8"></circle>
-                <path d="m21 21-4.3-4.3"></path>
-              </svg>
-            </div>
-          </div> -->
-        </div>
-        <!-- <div class="hidden min-[820px]:block">
-          <div class="language-selector svelte-1jmdpfu relative">
-            <button
-              type="button"
-              class="relative flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-sm text-gray-700 shadow-sm ring-1 ring-gray-300 ring-inset hover:bg-gray-50"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide-icon lucide lucide-globe size-4"
-              >
-                <circle cx="12" cy="12" r="10"></circle>
-                <path
-                  d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
-                ></path>
-                <path d="M2 12h20"></path>
-              </svg>
-              <span class="hidden min-[890px]:inline">🇬🇧 English</span>
-              <span class="min-[820px]:inline min-[890px]:hidden">🇬🇧 EN</span>
-            </button>
-          </div>
-        </div> -->
-
-        <!-- <a
-          [routerLink]="['/login']"
-          routerLinkActive="router-link-active"
-          class="hidden transform-gpu items-center rounded-md bg-blue-700 px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:scale-105 hover:bg-blue-800 hover:text-white hover:shadow-xl active:scale-95 min-[820px]:inline-flex"
-          data-svelte-h="svelte-1bfjdjt"
-          >Login</a
-        > -->
-        <button
-          class="rounded-button text-drcopd-gray-600 hover:text-drcopd-navy inline-flex items-center justify-center p-2 transition-colors duration-250 hover:bg-gray-100 min-[820px]:hidden"
-        >
-          <span class="sr-only" data-svelte-h="svelte-1bvqpab"
-            >Open main menu</span
-          >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide-icon lucide lucide-menu h-6 w-6"
-          >
-            <line x1="4" x2="20" y1="12" y2="12"></line>
-            <line x1="4" x2="20" y1="6" y2="6"></line>
-            <line x1="4" x2="20" y1="18" y2="18"></line>
-          </svg>
-        </button>
       </div>
     </div>
   </div>
