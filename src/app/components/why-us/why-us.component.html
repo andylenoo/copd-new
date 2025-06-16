@@ -1,26 +1,26 @@
 <section class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-12 lg:mx-auto">
   <!-- Left Section -->
-  <div class="">
-    <span
+  <div>
+    <!-- <span
       class="mb-4 inline-block rounded-full border border-gray-300 px-4 py-1 text-sm font-medium text-gray-600"
     >
-      TRAVEL TO DELIVER
-    </span>
+      {{ "TRAVEL TO DELIVER" | translate }}
+    </span> -->
     <h2 class="text-brandColorPrimary mb-4 text-3xl font-semibold">
-      Why Choose Us
+      {{ "Why Choose Us" | translate }}
     </h2>
     <p class="text-gray-600">
-      We provide exclusive COPD treatments using patented protocols at
-      accredited hospitals with top pulmonologists. Our fixed pricing ensures no
-      hidden costs. You’ll have 24/7 multilingual support via WhatsApp and a VIP
-      concierge to assist you from arrival through recovery.
+      {{
+        "We provide exclusive COPD treatments using patented protocols at accredited hospitals with top pulmonologists. Our fixed pricing ensures no hidden costs. You’ll have 24/7 multilingual support via WhatsApp and a VIP concierge to assist you from arrival through recovery."
+          | translate
+      }}
     </p>
   </div>
 
   <!-- Right Section -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-    <!-- Worldwide -->
     <div class="rounded-xl bg-gray-50 p-6 shadow-sm">
+      <!-- Icon -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="40px"
@@ -33,14 +33,18 @@
         />
       </svg>
       <h3 class="mt-2 text-lg font-semibold text-gray-900">
-        Exclusive & Patented COPD Protocols
+        {{ "Exclusive & Patented COPD Protocols" | translate }}
       </h3>
       <p class="text-sm text-gray-600">
-        Patented therapies tailored to maximize lung function and recovery.
+        {{
+          "Patented therapies tailored to maximize lung function and recovery."
+            | translate
+        }}
       </p>
     </div>
-    <!-- Profitable -->
+
     <div class="rounded-xl bg-gray-50 p-6 shadow-sm">
+      <!-- Icon -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="40px"
@@ -53,15 +57,18 @@
         />
       </svg>
       <h3 class="mt-2 text-lg font-semibold text-gray-900">
-        Accredited Hospitals with Top Pulmonologists
+        {{ "Accredited Hospitals with Top Pulmonologists" | translate }}
       </h3>
       <p class="text-sm text-gray-600">
-        Get treated by leading experts in accredited, state-of-the-art
-        facilities.
+        {{
+          "Get treated by leading experts in accredited, state-of-the-art facilities."
+            | translate
+        }}
       </p>
     </div>
-    <!-- Economical -->
+
     <div class="rounded-xl bg-gray-50 p-6 shadow-sm">
+      <!-- Icon -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="40px"
@@ -74,14 +81,15 @@
         />
       </svg>
       <h3 class="mt-2 text-lg font-semibold text-gray-900">
-        Fixed Pricing — No Hidden Costs
+        {{ "Fixed Pricing — No Hidden Costs" | translate }}
       </h3>
       <p class="text-sm text-gray-600">
-        One-time cost. No surprises. No hidden charges—ever.
+        {{ "One-time cost. No surprises. No hidden charges—ever." | translate }}
       </p>
     </div>
-    <!-- Secure Payment -->
+
     <div class="rounded-xl bg-gray-50 p-6 shadow-sm">
+      <!-- Icon -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="40px"
@@ -94,14 +102,18 @@
         />
       </svg>
       <h3 class="mt-2 text-lg font-semibold text-gray-900">
-        Multilingual Case Managers (WhatsApp-first)
+        {{ "Multilingual Case Managers (WhatsApp-first)" | translate }}
       </h3>
       <p class="text-sm text-gray-600">
-        Dedicated case managers who speak your language, just a message away.
+        {{
+          "Dedicated case managers who speak your language, just a message away."
+            | translate
+        }}
       </p>
     </div>
 
     <div class="rounded-xl bg-gray-50 p-6 shadow-sm">
+      <!-- Icon -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="40px"
@@ -114,11 +126,13 @@
         />
       </svg>
       <h3 class="mt-2 text-lg font-semibold text-gray-900">
-        VIP Concierge from Airport to Recover
+        {{ "VIP Concierge from Airport to Recover" | translate }}
       </h3>
       <p class="text-sm text-gray-600">
-        Seamless support from arrival to full recovery, including airport
-        transfers.
+        {{
+          "Seamless support from arrival to full recovery, including airport transfers."
+            | translate
+        }}
       </p>
     </div>
   </div>

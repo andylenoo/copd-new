@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AccordionModule } from 'primeng/accordion';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface FaqItem {
   title?: string;
@@ -15,7 +16,7 @@ interface FaqItem {
   selector: 'app-faq',
   templateUrl: './faq.component.html',
   styleUrls: ['./faq.component.css'],
-  imports: [AccordionModule, CommonModule],
+  imports: [AccordionModule, CommonModule, TranslateModule],
 })
 export class FaqComponent {
   tabs: FaqItem[] = [

@@ -152,24 +152,26 @@
 
 <section class="pt-16">
   <h2 class="text-brandColorPrimary mb-4 text-center text-3xl font-semibold">
-    Frequently Asked Questions
+    {{ "Frequently Asked Questions" | translate }}
   </h2>
   <div class="card">
     <p-accordion [value]="0">
       @for (tab of tabs; track tab.title) {
         <p-accordion-panel [value]="tab.value">
-          <p-accordion-header>{{ tab.title }}</p-accordion-header>
+          <p-accordion-header>{{
+            tab.title ?? "" | translate
+          }}</p-accordion-header>
           <p-accordion-content>
-            <p class="m-0">{{ tab.content }}</p>
+            <p class="m-0">{{ tab.content ?? "" | translate }}</p>
             <ul class="mt-2 list-inside list-disc" *ngIf="tab.li1">
               <li>
-                {{ tab.li1 }}
+                {{ tab.li1 | translate }}
               </li>
               <li>
-                {{ tab.li2 }}
+                {{ tab.li2 ?? "" | translate }}
               </li>
               <li>
-                {{ tab.li3 }}
+                {{ tab.li3 ?? "" | translate }}
               </li>
             </ul>
           </p-accordion-content>

@@ -3,27 +3,35 @@
 >
   <video class="w-full rounded-2xl lg:ml-15 lg:h-[495px] lg:w-[875px]" controls>
     <source src="assets/videos/video-english.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
+    {{ "Your browser does not support the video tag." | translate }}
   </video>
 
   <div class="flex flex-col gap-5 text-center lg:text-left">
-    <span class="text-gray-600 uppercase">We change lives:</span>
+    <span class="text-gray-600 uppercase">{{
+      "We change lives:" | translate
+    }}</span>
     <h2 class="text-brandColorPrimary text-4xl leading-[50px] font-bold">
-      Broncho Muco Cleaner for Chronic Bronchitis
+      {{ "Broncho Muco Cleaner for Chronic Bronchitis" | translate }}
     </h2>
     <p class="gray-300">
-      Single case bronchoscopic treatment at Thoraxklinik am
-      Universitätsklinikum Heidelberg
+      {{
+        "Single case bronchoscopic treatment at Thoraxklinik am Universitätsklinikum Heidelberg"
+          | translate
+      }}
     </p>
     <ul class="mb-2 list-inside list-disc">
-      <li class="mb-2">COPD balloon treatment</li>
+      <li class="mb-2">{{ "COPD balloon treatment" | translate }}</li>
       <li class="mb-2">
-        "Desquamation" with the idea to remove goblet cells from the inner layer
-        of respiratory pathways.
+        {{
+          '"Desquamation" with the idea to remove goblet cells from the inner layer of respiratory pathways.'
+            | translate
+        }}
       </li>
       <li class="mb-2">
-        Balloon is inflated and deflated with adjustable pressure and frequency
-        using an electronic pump.
+        {{
+          "Balloon is inflated and deflated with adjustable pressure and frequency using an electronic pump."
+            | translate
+        }}
       </li>
     </ul>
   </div>

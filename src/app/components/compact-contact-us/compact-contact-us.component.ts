@@ -5,12 +5,13 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-compact-contact-us',
   templateUrl: './compact-contact-us.component.html',
   styleUrls: ['./compact-contact-us.component.css'],
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, TranslateModule],
 })
 export class CompactContactUsComponent {
   form: FormGroup;

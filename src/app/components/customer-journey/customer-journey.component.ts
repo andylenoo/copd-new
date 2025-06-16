@@ -3,6 +3,7 @@ import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface EventItem {
   status?: string;
@@ -17,7 +18,7 @@ interface EventItem {
   selector: 'app-customer-journey',
   templateUrl: './customer-journey.component.html',
   styleUrls: ['./customer-journey.component.css'],
-  imports: [Timeline, CardModule, ButtonModule, CommonModule],
+  imports: [Timeline, CardModule, ButtonModule, CommonModule, TranslateModule],
 })
 export class CustomerJourneyComponent {
   isServiceActive: boolean = false;

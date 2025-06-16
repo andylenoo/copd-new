@@ -36,12 +36,12 @@ export class AppComponent {
   constructor(
     private router: Router,
     private hamburgerMenu: HamburgerMenuService,
-    // private translate: TranslateService,
+    private translate: TranslateService,
   ) {
     // console.log('AppComponent initialized');
-    // translate.addLangs(['en', 'tr']);
-    // translate.setDefaultLang('en');
-    // translate.use('tr');
+    translate.addLangs(['en', 'tr']);
+    translate.setDefaultLang('en');
+    translate.use('tr');
 
     // this.translate.setDefaultLang('en');
     this.router.events
